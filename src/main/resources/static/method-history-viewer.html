@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Method History Viewer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    input, button { margin: 5px; padding: 5px; }
+    ul { list-style-type: none; padding-left: 20px; }
+    li { margin: 4px 0; }
+    .folder-link { font-weight: bold; text-decoration: none; color: #333; cursor: pointer; }
+    .file-link { text-decoration: none; color: #0066cc; cursor: pointer; }
+    .nav-button { margin-right: 10px; cursor: pointer; color: blue; text-decoration: underline; }
+    .code-block { background: #f9f9f9; padding: 10px; border: 1px solid #ccc; margin-top: 10px; overflow-x: auto; white-space: pre; font-family: 'Courier New', monospace; }
+    .commit-history { margin-top: 10px; }
+    .commit-link { text-decoration: none; color: #0066cc; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Method History Viewer</h1>
+
+  <!-- User enters the repository URL to clone -->
+  <input type="text" id="repoUrl" placeholder="Enter GitHub Repository URL" size="60">
+  <button onclick="cloneRepo()">Clone Repository</button>
+  
+  <!-- Navigation Breadcrumb -->
+  <div id="navigation"></div>
+  <!-- File Tree list -->
+  <div id="fileTree"></div>
+  <!-- Method List from a file -->
+  <div id="methodList"></div>
+  <!-- Method Details (commit history etc.) -->
+  <div id="methodDetails"></div>
+
+  <script>
+    // Global Variables
+    let currentPath = "";         // Holds the current folder path in the file tree
+    let fullFileTree = {};        // File tree object built from the files array
+    let currentRepoPath = "";     // Absolute path to the local cloned repository
+
+    // --- CLONE AND FILE TREE FUNCTIONS ---
+
+    // Clones the repository via the backend and fetches file listing
+    function cloneRepo() {
+      const repoUrl = document.getElementById('repoUrl').value;
+      if (!repoUrl) {
+        alert('Please enter a valid repository URL.');
+        return;
+      }
+      fetch(`/method-history/clone?repoUrl=${encodeURIComponent(repoUrl)}`, {
+        method: 'POST'
+      })
+      .then(res => res.text())
+      .then(repoPath => {
+        console.log('Repository cloned to:', repoPath);
+        currentRepoPath = repoPath;
+        // Now request the file list. The /files endpoint should return an array
+        // of paths relative to the repository root.
+        return fetch(`/method-history/files?repoDirPath=${encodeURIComponent(repoPath)}`);
+      })
+      .then(res => res.json())
+      .then(data => {
+        // Ensure we got an array
+        if (!Array.isArray(data)) {
+          console.error("Expected an array for files, got:", data);
+          alert("Error: file list data format is not as expected.");
+          return;
+        }
+        fullFileTree = buildFileTree(data);
+        currentPath = "";  // Reset to root
+        updateView();
+      })
+      .catch(err => {
+        console.error('Error cloning repository or fetching file list:', err);
+        alert('Error cloning repository: ' + err);
+      });
+    }
+
+    // Builds a nested file tree object from an array of file paths.
+    function buildFileTree(paths) {
+      if (!Array.isArray(paths)) {
+        console.error("buildFileTree expected an array, got:", paths);
+        return {};
+      }
+      let root = {};
+      paths.forEach(path => {
+        // Assume paths are relative to repository root, e.g., "src/main/java/..."
+        const parts = path.split('/');
+        let current = root;
+        parts.forEach(part => {
+          if (part.trim() !== "") {
+            current[part] = current[part] || {};
+            current = current[part];
+          }
+        });
+      });
+      return root;
+    }
+
+    // Updates the breadcrumb navigation and file tree display.
+    function updateView() {
+      const node = navigateTree(fullFileTree, currentPath);
+      // Build navigation (breadcrumb)
+      let navHtml = '<span class="nav-button" onclick="goToPath(\'\')">root</span>';
+      if (currentPath) {
+        const parts = currentPath.split('/');
+        parts.forEach((part, idx) => {
+          const path = parts.slice(0, idx + 1).join('/');
+          navHtml += ` / <span class="nav-button" onclick="goToPath('${path}')">${part}</span>`;
+        });
+      }
+      document.getElementById('navigation').innerHTML = navHtml;
+
+      // Build the file tree list for the current node
+      let html = '<ul>';
+      const keys = Object.keys(node);
+      if (keys.length === 0) {
+        html += '<li><em>No files or folders here.</em></li>';
+      } else {
+        keys.forEach(key => {
+          const isFolder = Object.keys(node[key]).length > 0;
+          const itemPath = currentPath ? `${currentPath}/${key}` : key;
+          if (isFolder) {
+            // Folder: make it clickable for navigation.
+            html += `<li><a class="folder-link" onclick="goToPath('${itemPath}')">📁 ${key}</a></li>`;
+          } else if (key.endsWith('.java')) {
+            // File: only .java files are clickable for analysis.
+            // Since the files returned by /files are relative paths, itemPath is already relative.
+            html += `<li><a class="file-link" href="#" onclick="getMethodHistory('${itemPath}')">${key}</a></li>`;
+          }
+        });
+      }
+      html += '</ul>';
+      document.getElementById('fileTree').innerHTML = html;
+      // Clear previous method list & details.
+      document.getElementById('methodList').innerHTML = '';
+      document.getElementById('methodDetails').innerHTML = '';
+    }
+
+    // Navigates the file tree object based on the current path.
+    function navigateTree(tree, path) {
+      const parts = path ? path.split('/') : [];
+      let current = tree;
+      for (const part of parts) {
+        if (!current[part]) return {};
+        current = current[part];
+      }
+      return current;
+    }
+
+    // Changes currentPath when a folder is clicked and updates the view.
+    function goToPath(path) {
+      currentPath = path;
+      updateView();
+    }
+
+    // --- ANALYSIS ENDPOINT CALL ---
+
+    // Calls the analysis endpoint to get method history for the given file.
+    // filePath here is assumed to be a relative path from the repository root.
+    function getMethodHistory(filePath) {
+      console.log("Requesting analysis for file:", filePath);
+      fetch('/method-history', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          repoDirPath: currentRepoPath,  // Absolute path for the cloned repo
+          filePath: filePath             // Relative path in the repo, e.g., "src/main/java/..."
+        })
+      })
+      .then(response => {
+        if (!response.ok) {
+          return response.text().then(text => { throw new Error(text); });
+        }
+        return response.json();
+      })
+      .then(methods => {
+        // Display the list of methods.
+        if (!Array.isArray(methods)) {
+          throw new Error('Expected an array of methods.');
+        }
+        let html = '<h3>Methods:</h3><ul>';
+        methods.forEach(method => {
+          html += `<li><a href="#" onclick='showMethodDetails(${JSON.stringify(method)})'>${method.methodName}</a></li>`;
+        });
+        html += '</ul>';
+        document.getElementById('methodList').innerHTML = html;
+        document.getElementById('methodDetails').innerHTML = '';
+      })
+      .catch(error => {
+        console.error('Error fetching method history:', error);
+        document.getElementById('methodList').innerHTML = `<p style="color: red;"><strong>Error:</strong> ${error.message}</p>`;
+        document.getElementById('methodDetails').innerHTML = '';
+      });
+    }
+
+    // --- DISPLAY METHOD DETAILS ---
+
+   function showMethodDetails(method) {
+    let html = `<h3>Commit History:</h3><ul>`;
+    if (method.commitHistory && method.commitHistory.length > 0) {
+        method.commitHistory.forEach(commit => {
+            let commitId = commit.commitId.substring(0, 7);
+            // Use fallback "None" if changeTypes is empty.
+            let changeTypes = (commit.changeTypes && commit.changeTypes.length > 0)
+                              ? commit.changeTypes.join(', ')
+                              : "None";
+            html += `<li>
+                        <strong>Commit:</strong> ${commitId} - ${commit.author} - ${commit.date}<br>
+                        <strong>Change Type:</strong> ${changeTypes}<br>
+                        <strong>Message:</strong> ${commit.message}
+                     </li>`;
+        });
+    } else {
+        html += "<li>No commit history available.</li>";
+    }
+    html += '</ul>';
+    document.getElementById('methodDetails').innerHTML = html;
+}
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+"Index","Method Name","Method Signature","Commit Count","Change Types","Commit Message","Commit ID","Commit Author"
+"1","clazzTest","clazzTest","2","Body Change","JDK 动态代理完成
+","f1916e66be197ad43d027af33dff08d267d157aa","crossoverJie"
+"2","clazzTest","clazzTest","2","Body Change",":white_check_mark: argument test.
+","f829e6c773202476dafd5a6927235495de6e77d0","crossoverJie"
+"3","put3","put3","1","Body Change",":white_check_mark: Adding tests.
+","aba48b40b0ae4544f6233d06041b8a7072c98c32","crossoverJie"
+"4","put4","put4","1","Body Change",":white_check_mark: Adding tests.
+","aba48b40b0ae4544f6233d06041b8a7072c98c32","crossoverJie"
+"5","get4","get4","1","Body Change, Exceptions Change, Introduced, MultiChange",":white_check_mark: Adding tests.lrumap  test
+","dd37f2f07d32abf720607aea2e43bc36be44b587","crossoverJie"
+"6","test","test","1","Body Change","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"7","main","main","1","Body Change","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"8","isLoop3","isLoop3","1","Body Change","修复只有两个节点的链表
+","1776fc6b6b2b1dee54c7caeb10f8f9a8a8c9c5e4","crossoverJie"
+"9","put3","put3","1","Body Change",":bulb: Documenting source code.
+","3763914ec48135ba75a8c2ec4760b074ddedfba8","crossoverJie"
+"10","main","main","1","Body Change",":bulb: Documenting source code.注释线程池
+","a5742f5f117150b9ce6eb14d456ed1ac32fd257a","crossoverJie"
+"11","modifyBasic","modifyBasic","1","Body Change",":white_check_mark: argument test.
+","8e213f2c13b9e237a4d47304e4f60fcc29160d28","crossoverJie"
+"12","modifyCar1","modifyCar1","1","Body Change",":white_check_mark: argument test.
+","8e213f2c13b9e237a4d47304e4f60fcc29160d28","crossoverJie"
+"13","testList","testList","1","Body Change",":white_check_mark: argument test.
+","8e213f2c13b9e237a4d47304e4f60fcc29160d28","crossoverJie"
+"14","addList","addList","1","Body Change",":white_check_mark: argument test.
+","8e213f2c13b9e237a4d47304e4f60fcc29160d28","crossoverJie"
+"15","test02","test02","1","Body Change",":white_check_mark: argument test.
+","8e213f2c13b9e237a4d47304e4f60fcc29160d28","crossoverJie"
+"16","modifyCar","modifyCar","1","Body Change",":white_check_mark: argument test.
+","8e213f2c13b9e237a4d47304e4f60fcc29160d28","crossoverJie"
+"17","init","init","2","Body Change, Exceptions Change, MultiChange",":white_check_mark: Adding tests.
+","89afa05738e44abdb4db009dc9b94a39981c88ec","crossoverJie"
+"18","init","init","2","Body Change, Exceptions Change, MultiChange",":sparkles: Introducing new features.
+","c31de4723784c28b465272503a5a38025d435779","crossoverJie"
+"19","main","main","3","Body Change, Exceptions Change, MultiChange","Merge pull request #13 from crossoverJie/dev
+
+thread communication","c53a279990f6824a4686d675a4ffe9c2856be5c1","crossoverJie"
+"20","main","main","3","Body Change, Exceptions Change, MultiChange","Merge pull request #17 from crossoverJie/dev
+
+CyclicBarrier","e518cb03d8535850e1d83544b69515950e1fd79e","crossoverJie"
+"21","main","main","3","Exceptions Change",":sparkles: 自定义countdown
+","a8dff3b4fc5d803c1da3b4f709ce3c67933c3d17","crossoverJie"
+"22","cyclicBarrier","cyclicBarrier","1","Body Change, Exceptions Change, Introduced, MultiChange","Merge pull request #17 from crossoverJie/dev
+
+CyclicBarrier","e518cb03d8535850e1d83544b69515950e1fd79e","crossoverJie"
+"23","countDownLatch","countDownLatch","6","Body Change, Exceptions Change, MultiChange","完善版本
+","50e403433f02a573dbc8898248ef5ee2b462d1b0","crossoverJie"
+"24","countDownLatch","countDownLatch","6","Body Change","Merge pull request #13 from crossoverJie/dev
+
+thread communication","c53a279990f6824a4686d675a4ffe9c2856be5c1","crossoverJie"
+"25","countDownLatch","countDownLatch","6","Exceptions Change","Merge pull request #17 from crossoverJie/dev
+
+CyclicBarrier","e518cb03d8535850e1d83544b69515950e1fd79e","crossoverJie"
+"26","countDownLatch","countDownLatch","6","Body Change, Exceptions Change, MultiChange",":sparkles: 自定义countdown
+","a8dff3b4fc5d803c1da3b4f709ce3c67933c3d17","crossoverJie"
+"27","countDownLatch","countDownLatch","6","Body Change, Exceptions Change, MultiChange",":bulb: Documenting source code.
+","d703d4241e165d627e6d521485f832a7b30a7fae","crossoverJie"
+"28","countDownLatch","countDownLatch","6","Body Change, Exceptions Change, MultiChange",":bulb: Documenting source code.
+","70d0a247e77680f99091ff9e4780ed9dcb91034a","crossoverJie"
+"29","executorService","executorService","1","Body Change","Merge pull request #13 from crossoverJie/dev
+
+thread communication","c53a279990f6824a4686d675a4ffe9c2856be5c1","crossoverJie"
+"30","join","join","2","Exceptions Change","完善版本
+","50e403433f02a573dbc8898248ef5ee2b462d1b0","crossoverJie"
+"31","join","join","2","Exceptions Change","Merge pull request #13 from crossoverJie/dev
+
+thread communication","c53a279990f6824a4686d675a4ffe9c2856be5c1","crossoverJie"
+"32","piped","piped","2","File Renamed","完善版本
+","50e403433f02a573dbc8898248ef5ee2b462d1b0","crossoverJie"
+"33","piped","piped","2","Body Change, Exceptions Change, Introduced, MultiChange","Merge pull request #13 from crossoverJie/dev
+
+thread communication","c53a279990f6824a4686d675a4ffe9c2856be5c1","crossoverJie"
+"34","run","run","1","Body Change","Merge pull request #116 from crossoverJie/fix
+
+:bug: Fixing a bug. #115","7462f65a5139025b0a6d71fee0a4e0d5948e5def","crossoverJie"
+"35","run","run","1","Body Change","Merge pull request #116 from crossoverJie/fix
+
+:bug: Fixing a bug. #115","7462f65a5139025b0a6d71fee0a4e0d5948e5def","crossoverJie"
+"36","LRUAbstractMap","LRUAbstractMap","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"37","executeCheckTime","executeCheckTime","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"38","entrySet","entrySet","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"39","put","put","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"40","get","get","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"41","remove","remove","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"42","sizeUp","sizeUp","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"43","sizeDown","sizeDown","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"44","size","size","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"45","Node","Node","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"46","setUpdateTime","setUpdateTime","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"47","getUpdateTime","getUpdateTime","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"48","toString","toString","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"49","hash","hash","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"50","lruCallback","lruCallback","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"51","run","run","1","Body Change, Introduced, MultiChange","Merge pull request #25 from crossoverJie/dev
+
+LRU cache","e5825d1f16d846707c1b7da662022b687ca6753f","crossoverJie"
+"52","isLoop","isLoop","2","Body Change","修复只有两个节点的链表
+","1776fc6b6b2b1dee54c7caeb10f8f9a8a8c9c5e4","crossoverJie"
+"53","isLoop","isLoop","2","Body Change","更新
+","1ad39074527de2fa2e39c4dd417919a85109ad18","crossoverJie"
+"54","reverseNode","reverseNode","1","Body Change",":memo: Writing docs.
+","2b821805c52312493b22bb88384bdef2a5b75b6c","crossoverJie"
+"55","getTwo1","getTwo1","1","Body Change","Merge remote-tracking branch 'origin/master'
+","e498c525f547aca2f23a66e3973fbb6198902399","crossoverJie"
+"56","main","main","1","Body Change","更新
+","1e0a8fdc8ed45e6daef1b6aa9eeee5938757ef93","crossoverJie"
+"57","splitRedPacket","splitRedPacket","1","Modifier Change, Body Change, MultiChange","Merge pull request #118 from crossoverJie/fix
+
+Fix #112 ","80f2f8e8a705c4355a7ff5fc7fea762feb9fd642","crossoverJie"
+"58","randomRedPacket","randomRedPacket","1","Body Change","Merge pull request #118 from crossoverJie/fix
+
+Fix #112 ","80f2f8e8a705c4355a7ff5fc7fea762feb9fd642","crossoverJie"
+"59","main","main","1","Body Change","Merge pull request #118 from crossoverJie/fix
+
+Fix #112 ","80f2f8e8a705c4355a7ff5fc7fea762feb9fd642","crossoverJie"
+"60","submit","submit","1","Body Change, Introduced, MultiChange",":sparkles: Introducing new features.有返回值的线程
+","d412dd61fa4ec9b7d6632d2eb67a3bfa8f714700","crossoverJie"
+"61","run","run","1","Body Change",":sparkles: Introducing new features.线程池异常处理
+","fd718a2c9948004ccec48698f520d4b43fa589ad","crossoverJie"
+"62","getTask","getTask","1","Body Change",":bulb: Documenting source code.注释线程池
+","0feb80dde1d4bf39972742e12a35064411994eca","crossoverJie"
+"63","mainNotify","mainNotify","1","Body Change, Introduced, MultiChange",":bulb: Documenting source code.注释线程池
+","a5742f5f117150b9ce6eb14d456ed1ac32fd257a","crossoverJie"
+"64","countDown","countDown","2","Body Change",":bulb: Documenting source code.
+","95cb9214642935542a25a39179739bba356f47b4","crossoverJie"
+"65","countDown","countDown","2","Body Change",":bulb: Documenting source code.
+","972e15e7e05f27f1846ecf45b44c16085ddf25f1","crossoverJie"
+"66","await","await","2","Exceptions Change",":bulb: Documenting source code.
+","93f422996c4c49b6aec883e8e1c2327578aef9e2","crossoverJie"
+"67","await","await","2","Exceptions Change",":bulb: Documenting source code.
+","972e15e7e05f27f1846ecf45b44c16085ddf25f1","crossoverJie"
+"68","onData","onData","1","Body Change",":white_check_mark: Adding tests.Disruptor
+","26d1a688c143bde9ecf29129a9ff3a279f2fb663","crossoverJie"
+"69","main","main","1","Body Change",":white_check_mark: Adding tests.Disruptor
+","26d1a688c143bde9ecf29129a9ff3a279f2fb663","crossoverJie"
+"70","Work","Work","1","Body Change",":white_check_mark: Adding tests.Disruptor
+","26d1a688c143bde9ecf29129a9ff3a279f2fb663","crossoverJie"
+"71","run","run","1","Body Change",":white_check_mark: Adding tests.Disruptor
+","26d1a688c143bde9ecf29129a9ff3a279f2fb663","crossoverJie"

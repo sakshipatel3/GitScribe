@@ -1,0 +1,2190 @@
+"Index","Method Name","Method Signature","Commit Count","Change Types","Commit Message","Commit ID","Commit Author"
+"1","execute","execute","2","Body Change, Exceptions Change, MultiChange","Merge pull request #73
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","da7de2b8b1be12fb646997b97d2deec63eaa4c0b","Kohsuke Kawaguchi"
+"2","execute","execute","2","Body Change, Exceptions Change, MultiChange","What appears to be a left-over from debugging
+","badf5ed98a73d211f37b5225ae6658dd80945eb4","Kohsuke Kawaguchi"
+"3","generateUsage","generateUsage","2","Exceptions Change","Merge pull request #73
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","da7de2b8b1be12fb646997b97d2deec63eaa4c0b","Kohsuke Kawaguchi"
+"4","generateUsage","generateUsage","2","Body Change, Exceptions Change, MultiChange","Replaced with maven assembly plugin
+","cb80b812586e81d0307b191be226df28f4c7baa9","Kohsuke Kawaguchi"
+"5","XmlWriter","XmlWriter","1","Body Change, Introduced, MultiChange","Merge branch 'pull-64'
+","d42aabb6cf82e4aec1f48d5170efd231c9597c1f","Kohsuke Kawaguchi"
+"6","onOption","onOption","1","Body Change","Merge branch 'pull-1'
+
+Conflicts:
+	.gitignore
+	pom.xml
+","790b331409bbd44e6a295de466b2344232066d4b","Kohsuke Kawaguchi"
+"7","run","run","3","Body Change, Exceptions Change, MultiChange","print help screen if no option is given
+","80aa7a1686e045e8b2b3684b5e14b4a2477e2407","kohsuke"
+"8","run","run","3","Body Change, Exceptions Change, MultiChange","bug fixes
+","aceb12b6d77a348678662235f638dbca7906d161","kohsuke"
+"9","run","run","3","Body Change, Exceptions Change, MultiChange","Merge branch 'pull-64'
+","d42aabb6cf82e4aec1f48d5170efd231c9597c1f","Kohsuke Kawaguchi"
+"10","printUsage","printUsage","1","Body Change","print help screen if no option is given
+","80aa7a1686e045e8b2b3684b5e14b4a2477e2407","kohsuke"
+"11","onOption","onOption","1","Modifier Change, Body Change, MultiChange","Merge branch 'pull-1'
+
+Conflicts:
+	.gitignore
+	pom.xml
+","790b331409bbd44e6a295de466b2344232066d4b","Kohsuke Kawaguchi"
+"12","onOption","onOption","1","-","Merge branch 'pull-1'
+
+Conflicts:
+	.gitignore
+	pom.xml
+","790b331409bbd44e6a295de466b2344232066d4b","Kohsuke Kawaguchi"
+"13","onOption","onOption","1","Body Change","Merge branch 'pull-1'
+
+Conflicts:
+	.gitignore
+	pom.xml
+","790b331409bbd44e6a295de466b2344232066d4b","Kohsuke Kawaguchi"
+"14","getTestObject","getTestObject","1","Return Type Change","- implemented the stop option ""--"".
+- added a test case for it.
+- modified to use generics to avoid casting in test case.
+","fa1c0a620764bd15f5f69faf56e4907235490000","kohsuke"
+"15","setArgs","setArgs","1","Body Change, Introduced, MultiChange","Convenience method for setting the args of the parser.
+","935f709e86b71c41484c1d96b1fe9dc16f4827dd","jhm"
+"16","setUp","setUp","4","Exceptions Change","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"17","setUp","setUp","4","Body Change, Exceptions Change, MultiChange","When using (and having now) localized resource bundles, we have to use the right one during tests. So for tests use the US one.
+","45c10480ec217f1a10004e022840a7ef94765c06","jhm"
+"18","setUp","setUp","4","Exceptions Change","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"19","setUp","setUp","4","Body Change, Exceptions Change, MultiChange","CmdLineException separates message vs localized message now, so no need to mess with locales
+","0385d7fbcd2c243129c74ad6f789fdaec8accbf0","Kohsuke Kawaguchi"
+"20","createParser","createParser","2","File Renamed","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"21","createParser","createParser","2","Body Change, Introduced, MultiChange","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"22","assertUsageLength","assertUsageLength","1","Body Change","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"23","assertUsageContains","assertUsageContains","1","Body Change, Introduced, MultiChange","Bug 5: Options without ""usage"" are hidden.
+- enhanced TestBase
+- prepared TestCase for Bug5
+
+serialUID
+","061ace203f21c248c507e374bb9a1df909a47a8f","jhm"
+"24","getUsageMessage","getUsageMessage","4","Body Change","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"25","getUsageMessage","getUsageMessage","4","Body Change","whitespaces
+","204460892a70b3ee387166ad30aa8806956789e1","jhm"
+"26","getUsageMessage","getUsageMessage","4","Body Change","Convenience method for setting the args of the parser.
+","935f709e86b71c41484c1d96b1fe9dc16f4827dd","jhm"
+"27","getUsageMessage","getUsageMessage","4","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"28","assertErrorMessagePrefix","assertErrorMessagePrefix","1","Body Change, Introduced, MultiChange","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"29","write","write","1","Body Change","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"30","getString","getString","1","Body Change","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"31","getTestObject","getTestObject","1","Return Type Change","- implemented the stop option ""--"".
+- added a test case for it.
+- modified to use generics to avoid casting in test case.
+","fa1c0a620764bd15f5f69faf56e4907235490000","kohsuke"
+"32","testSettingStringNoValues","testSettingStringNoValues","1","Body Change","- implemented the stop option ""--"".
+- added a test case for it.
+- modified to use generics to avoid casting in test case.
+","fa1c0a620764bd15f5f69faf56e4907235490000","kohsuke"
+"33","testSettingString","testSettingString","1","Body Change","- implemented the stop option ""--"".
+- added a test case for it.
+- modified to use generics to avoid casting in test case.
+","fa1c0a620764bd15f5f69faf56e4907235490000","kohsuke"
+"34","testSettingUsage","testSettingUsage","1","Body Change","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"35","testMissingParameter","testMissingParameter","1","Body Change","Merge pull request #102
+","07c72a2f99dd4b3eccd1395f91313c81cb314cc6","Kohsuke Kawaguchi"
+"36","_testUsage","_testUsage","2","File Renamed","whitespaces
+","204460892a70b3ee387166ad30aa8806956789e1","jhm"
+"37","_testUsage","_testUsage","2","Body Change, Introduced, MultiChange","Bug 5: Options without ""usage"" are hidden.
+- enhanced TestBase
+- prepared TestCase for Bug5
+
+serialUID
+","061ace203f21c248c507e374bb9a1df909a47a8f","jhm"
+"38","testMissingParameter","testMissingParameter","2","Body Change","Convenience method for setting the args of the parser.
+","935f709e86b71c41484c1d96b1fe9dc16f4827dd","jhm"
+"39","testMissingParameter","testMissingParameter","2","Body Change","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"40","testAlias","testAlias","1","Body Change","Convenience method for setting the args of the parser.
+","935f709e86b71c41484c1d96b1fe9dc16f4827dd","jhm"
+"41","testParseFailure","testParseFailure","2","File Renamed","Merge pull request #73
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","da7de2b8b1be12fb646997b97d2deec63eaa4c0b","Kohsuke Kawaguchi"
+"42","testParseFailure","testParseFailure","2","Body Change, Exceptions Change, Introduced, MultiChange","What appears to be a left-over from debugging
+","badf5ed98a73d211f37b5225ae6658dd80945eb4","Kohsuke Kawaguchi"
+"43","testParseFail","testParseFail","1","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"44","testOnString","testOnString","1","Body Change","It doesn't make sense for @Option to have multi-value setting.
+
+This is because whether a setter can handle multiple invocations
+well (by retaining all the values) or not (usually by having the last
+invocation overwrites all the previous values) are determined
+by Setter and setter alone, so asking the user to configure that makes
+no sense.
+
+MultivaluedTest indicates that the author of this part of the code seems
+to have been thinking about concatanating values or something like that,
+but if someone wants that kind of unusual parsing, he should be writing
+OptionHandler.
+","e883b9395b866ed9bd297bee534a04a8bbe83a37","Kohsuke Kawaguchi"
+"45","testOnArray","testOnArray","2","File Renamed","It doesn't make sense for @Option to have multi-value setting.
+
+This is because whether a setter can handle multiple invocations
+well (by retaining all the values) or not (usually by having the last
+invocation overwrites all the previous values) are determined
+by Setter and setter alone, so asking the user to configure that makes
+no sense.
+
+MultivaluedTest indicates that the author of this part of the code seems
+to have been thinking about concatanating values or something like that,
+but if someone wants that kind of unusual parsing, he should be writing
+OptionHandler.
+","e883b9395b866ed9bd297bee534a04a8bbe83a37","Kohsuke Kawaguchi"
+"46","testOnArray","testOnArray","2","Body Change, Exceptions Change, Introduced, MultiChange","added Setter that handles an array
+","4aa760d91e7336d794fcc69e6a4e086af6e40322","Kohsuke Kawaguchi"
+"47","testOnMultiValuedArray","testOnMultiValuedArray","2","File Renamed","It doesn't make sense for @Option to have multi-value setting.
+
+This is because whether a setter can handle multiple invocations
+well (by retaining all the values) or not (usually by having the last
+invocation overwrites all the previous values) are determined
+by Setter and setter alone, so asking the user to configure that makes
+no sense.
+
+MultivaluedTest indicates that the author of this part of the code seems
+to have been thinking about concatanating values or something like that,
+but if someone wants that kind of unusual parsing, he should be writing
+OptionHandler.
+","e883b9395b866ed9bd297bee534a04a8bbe83a37","Kohsuke Kawaguchi"
+"48","testOnMultiValuedArray","testOnMultiValuedArray","2","Body Change, Exceptions Change, Introduced, MultiChange","Fix ARGS4J-25 - support args like ""-coll val1 val2 -coll val3"" with `@Option(handler = StringArrayOptionHandler.class, …)`
+
+Fix `java.lang.IllegalArgumentException: array element type mismatch`
+","06b413b01cafe2dcbedfb82ac9e75a969a8c5ebe","Cyrille Le Clerc"
+"49","getTestObject","getTestObject","1","Return Type Change","- implemented the stop option ""--"".
+- added a test case for it.
+- modified to use generics to avoid casting in test case.
+","fa1c0a620764bd15f5f69faf56e4907235490000","kohsuke"
+"50","testSettingUsage","testSettingUsage","3","Body Change","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"51","testSettingUsage","testSettingUsage","3","Body Change","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"52","testSettingUsage","testSettingUsage","3","Body Change","Merge pull request #73
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","da7de2b8b1be12fb646997b97d2deec63eaa4c0b","Kohsuke Kawaguchi"
+"53","testMissingParameter","testMissingParameter","2","Body Change","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"54","testMissingParameter","testMissingParameter","2","Body Change","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"55","getSingleLineUsage","getSingleLineUsage","2","File Renamed","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"56","getSingleLineUsage","getSingleLineUsage","2","Body Change, Introduced, MultiChange","Merge pull request #73
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","da7de2b8b1be12fb646997b97d2deec63eaa4c0b","Kohsuke Kawaguchi"
+"57","testEqualsSeparator","testEqualsSeparator","3","File Renamed","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"58","testEqualsSeparator","testEqualsSeparator","3","Body Change, Introduced, MultiChange","Merge pull request #73
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","da7de2b8b1be12fb646997b97d2deec63eaa4c0b","Kohsuke Kawaguchi"
+"59","testEqualsSeparator","testEqualsSeparator","3","Body Change","Generalizing this by allowing arbitrary string
+","58ed80598033b0e4e89fbd19b8d33ea3c291910c","Kohsuke Kawaguchi"
+"60","testExplicitNoEqualsSeparator","testExplicitNoEqualsSeparator","3","File Renamed","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"61","testExplicitNoEqualsSeparator","testExplicitNoEqualsSeparator","3","Body Change, Introduced, MultiChange","Merge pull request #73
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","da7de2b8b1be12fb646997b97d2deec63eaa4c0b","Kohsuke Kawaguchi"
+"62","testExplicitNoEqualsSeparator","testExplicitNoEqualsSeparator","3","Body Change","Generalizing this by allowing arbitrary string
+","58ed80598033b0e4e89fbd19b8d33ea3c291910c","Kohsuke Kawaguchi"
+"63","getTestObject","getTestObject","1","Return Type Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"64","testNoValues","testNoValues","2","File Renamed","Gump doesnt like this testcase. Maybe I had forgotten to deactivate them while implementing the MapHandler.
+","45407aa8d6066d1f04def7883bcac6f33074aa24","jhm"
+"65","testNoValues","testNoValues","2","Body Change, Introduced, MultiChange","Handler for Maps.
+","0c6fd86da4e53d7d2c91d43754423f8bca195323","jhm"
+"66","testHasEqual","testHasEqual","2","File Renamed","Gump doesnt like this testcase. Maybe I had forgotten to deactivate them while implementing the MapHandler.
+","45407aa8d6066d1f04def7883bcac6f33074aa24","jhm"
+"67","testHasEqual","testHasEqual","2","Body Change, Introduced, MultiChange","Merge pull request #88 from dnozay/testcase87
+
+add testcase for issue #87","956853492e3fbf87f866c5fab03f877f252768ba","Kohsuke Kawaguchi"
+"68","testSinglePair","testSinglePair","2","File Renamed","Gump doesnt like this testcase. Maybe I had forgotten to deactivate them while implementing the MapHandler.
+","45407aa8d6066d1f04def7883bcac6f33074aa24","jhm"
+"69","testSinglePair","testSinglePair","2","Body Change, Introduced, MultiChange","Handler for Maps.
+","0c6fd86da4e53d7d2c91d43754423f8bca195323","jhm"
+"70","testMultiplePairs","testMultiplePairs","2","File Renamed","Gump doesnt like this testcase. Maybe I had forgotten to deactivate them while implementing the MapHandler.
+","45407aa8d6066d1f04def7883bcac6f33074aa24","jhm"
+"71","testMultiplePairs","testMultiplePairs","2","Body Change, Introduced, MultiChange","Handler for Maps.
+","0c6fd86da4e53d7d2c91d43754423f8bca195323","jhm"
+"72","testDuplicateKey","testDuplicateKey","2","File Renamed","Gump doesnt like this testcase. Maybe I had forgotten to deactivate them while implementing the MapHandler.
+","45407aa8d6066d1f04def7883bcac6f33074aa24","jhm"
+"73","testDuplicateKey","testDuplicateKey","2","Body Change, Introduced, MultiChange","Handler for Maps.
+","0c6fd86da4e53d7d2c91d43754423f8bca195323","jhm"
+"74","testInitialisation","testInitialisation","2","File Renamed","Gump doesnt like this testcase. Maybe I had forgotten to deactivate them while implementing the MapHandler.
+","45407aa8d6066d1f04def7883bcac6f33074aa24","jhm"
+"75","testInitialisation","testInitialisation","2","Body Change, Introduced, MultiChange","Handler for Maps.
+","0c6fd86da4e53d7d2c91d43754423f8bca195323","jhm"
+"76","testNoValue","testNoValue","2","File Renamed","Gump doesnt like this testcase. Maybe I had forgotten to deactivate them while implementing the MapHandler.
+","45407aa8d6066d1f04def7883bcac6f33074aa24","jhm"
+"77","testNoValue","testNoValue","2","Body Change, Introduced, MultiChange","Handler for Maps.
+","0c6fd86da4e53d7d2c91d43754423f8bca195323","jhm"
+"78","testNoKey","testNoKey","3","File Renamed","Gump doesnt like this testcase. Maybe I had forgotten to deactivate them while implementing the MapHandler.
+","45407aa8d6066d1f04def7883bcac6f33074aa24","jhm"
+"79","testNoKey","testNoKey","3","Body Change, Introduced, MultiChange","Handler for Maps.
+","0c6fd86da4e53d7d2c91d43754423f8bca195323","jhm"
+"80","testNoKey","testNoKey","3","Body Change","Fix error handling while parsing Map-Input
+","1a9c986017693c0ea886efe150dc94a6cd5a1509","jhm"
+"81","testNoSplitCharacter","testNoSplitCharacter","3","File Renamed","Gump doesnt like this testcase. Maybe I had forgotten to deactivate them while implementing the MapHandler.
+","45407aa8d6066d1f04def7883bcac6f33074aa24","jhm"
+"82","testNoSplitCharacter","testNoSplitCharacter","3","Body Change, Introduced, MultiChange","Handler for Maps.
+","0c6fd86da4e53d7d2c91d43754423f8bca195323","jhm"
+"83","testNoSplitCharacter","testNoSplitCharacter","3","Body Change","Fix error handling while parsing Map-Input
+","1a9c986017693c0ea886efe150dc94a6cd5a1509","jhm"
+"84","testDefaults","testDefaults","1","Body Change","More generic to allow Comparator, not just a boolean
+","94eb6d9043f545f85c943529f76c1835598c8fda","Kohsuke Kawaguchi"
+"85","testSetToSame","testSetToSame","2","Body Change","make ParserProperties more compliant to the standard builder pattern
+","98617f68d1fc9e175d19822d33ed3f8785bfac4a","Erb"
+"86","testSetToSame","testSetToSame","2","Body Change","More generic to allow Comparator, not just a boolean
+","94eb6d9043f545f85c943529f76c1835598c8fda","Kohsuke Kawaguchi"
+"87","testSetToDifferent","testSetToDifferent","3","Body Change","make ParserProperties more compliant to the standard builder pattern
+","98617f68d1fc9e175d19822d33ed3f8785bfac4a","Erb"
+"88","testSetToDifferent","testSetToDifferent","3","Body Change","More generic to allow Comparator, not just a boolean
+","94eb6d9043f545f85c943529f76c1835598c8fda","Kohsuke Kawaguchi"
+"89","testSetToDifferent","testSetToDifferent","3","Body Change","Fixing the inconsistency in naming methods
+","c055070b63d16072adb92536bf3d2814d29e453a","Kohsuke Kawaguchi"
+"90","testSetOnlyOne","testSetOnlyOne","3","Body Change","make ParserProperties more compliant to the standard builder pattern
+","98617f68d1fc9e175d19822d33ed3f8785bfac4a","Erb"
+"91","testSetOnlyOne","testSetOnlyOne","3","Body Change","More generic to allow Comparator, not just a boolean
+","94eb6d9043f545f85c943529f76c1835598c8fda","Kohsuke Kawaguchi"
+"92","testSetOnlyOne","testSetOnlyOne","3","Body Change","Fixing the inconsistency in naming methods
+","c055070b63d16072adb92536bf3d2814d29e453a","Kohsuke Kawaguchi"
+"93","getTestObject","getTestObject","1","Return Type Change","- implemented the stop option ""--"".
+- added a test case for it.
+- modified to use generics to avoid casting in test case.
+","fa1c0a620764bd15f5f69faf56e4907235490000","kohsuke"
+"94","testUsageMessage","testUsageMessage","3","Body Change","Dont do property tests here any more. Will be new tests :-)
+","ac104fddf96235c6a24ff5639a894af680885c6b","jhm"
+"95","testUsageMessage","testUsageMessage","3","Body Change","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"96","testUsageMessage","testUsageMessage","3","Body Change","Convenience method for setting the args of the parser.
+","935f709e86b71c41484c1d96b1fe9dc16f4827dd","jhm"
+"97","testUsageMessageWithNewWayToSet","testUsageMessageWithNewWayToSet","2","File Renamed","Dont do property tests here any more. Will be new tests :-)
+","ac104fddf96235c6a24ff5639a894af680885c6b","jhm"
+"98","testUsageMessageWithNewWayToSet","testUsageMessageWithNewWayToSet","2","Body Change, Introduced, MultiChange","test new way of setting width
+","ff847b3f4205f7d9c794a0f62f5638c0866a59a8","Erb"
+"99","getTestObject","getTestObject","1","Return Type Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"100","testMyself","testMyself","1","Body Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"101","testFather","testFather","1","Body Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"102","testGrandfather","testGrandfather","1","Body Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"103","testMother","testMother","1","Body Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"104","getTestObject","getTestObject","1","Return Type Change","- implemented the stop option ""--"".
+- added a test case for it.
+- modified to use generics to avoid casting in test case.
+","fa1c0a620764bd15f5f69faf56e4907235490000","kohsuke"
+"105","testSettingStringNoValues","testSettingStringNoValues","1","Body Change","- implemented the stop option ""--"".
+- added a test case for it.
+- modified to use generics to avoid casting in test case.
+","fa1c0a620764bd15f5f69faf56e4907235490000","kohsuke"
+"106","testSettingString","testSettingString","1","Body Change","- implemented the stop option ""--"".
+- added a test case for it.
+- modified to use generics to avoid casting in test case.
+","fa1c0a620764bd15f5f69faf56e4907235490000","kohsuke"
+"107","testSettingUsage","testSettingUsage","1","Body Change","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"108","testMissingParameter","testMissingParameter","1","Body Change","Check the usage messages.
+","e55cce0b5604bdb5668305d25fe7908c80f90a57","jhm"
+"109","testGetLocalizedMessage","testGetLocalizedMessage","1","Body Change","I think this name better reflect what it does
+","994b1728b33f49d00c430950258318a577fc2be0","Kohsuke Kawaguchi"
+"110","setUp","setUp","3","Body Change, Exceptions Change, Introduced, MultiChange","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"111","setUp","setUp","3","Body Change, Exceptions Change, Deleted, MultiChange","CmdLineException separates message vs localized message now, so no need to mess with locales
+","0385d7fbcd2c243129c74ad6f789fdaec8accbf0","Kohsuke Kawaguchi"
+"112","setUp","setUp","3","Body Change, Introduced, MultiChange","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"113","tearDown","tearDown","3","Body Change, Exceptions Change, Introduced, MultiChange","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"114","tearDown","tearDown","3","Body Change, Exceptions Change, Deleted, MultiChange","CmdLineException separates message vs localized message now, so no need to mess with locales
+","0385d7fbcd2c243129c74ad6f789fdaec8accbf0","Kohsuke Kawaguchi"
+"115","tearDown","tearDown","3","Body Change, Exceptions Change, Introduced, MultiChange","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"116","testPrintExampleModeAll","testPrintExampleModeAll","1","Body Change","Adds tests for parsing of arguments to ExampleTest. This shows how arguments are actually parsed.
+","6fb79d861046b7d14085c65bb90c7a00388ca1a6","Ian Flanigan"
+"117","testPrintExampleModeRequired","testPrintExampleModeRequired","1","Body Change","Adds tests for parsing of arguments to ExampleTest. This shows how arguments are actually parsed.
+","6fb79d861046b7d14085c65bb90c7a00388ca1a6","Ian Flanigan"
+"118","testParsingAllArgs","testParsingAllArgs","2","Body Change, Exceptions Change, MultiChange","Adds tests for parsing of arguments to ExampleTest. This shows how arguments are actually parsed.
+","6fb79d861046b7d14085c65bb90c7a00388ca1a6","Ian Flanigan"
+"119","testParsingAllArgs","testParsingAllArgs","2","Body Change, Exceptions Change, MultiChange","Merge pull request #21 from dlad/inetaddress
+
+Support for option of type InetAddress","978381682bde22226c29de7def429536e45a9688","Kohsuke Kawaguchi"
+"120","testParsingOnlyRequiredArgs","testParsingOnlyRequiredArgs","2","Body Change, Exceptions Change, MultiChange","Adds tests for parsing of arguments to ExampleTest. This shows how arguments are actually parsed.
+","6fb79d861046b7d14085c65bb90c7a00388ca1a6","Ian Flanigan"
+"121","testParsingOnlyRequiredArgs","testParsingOnlyRequiredArgs","2","Exceptions Change","Merge pull request #21 from dlad/inetaddress
+
+Support for option of type InetAddress","978381682bde22226c29de7def429536e45a9688","Kohsuke Kawaguchi"
+"122","testParsingMissingRequiredArgs","testParsingMissingRequiredArgs","1","Body Change","Adds tests for parsing of arguments to ExampleTest. This shows how arguments are actually parsed.
+","6fb79d861046b7d14085c65bb90c7a00388ca1a6","Ian Flanigan"
+"123","testForbidArgs","testForbidArgs","2","File Renamed","Adds tests for parsing of arguments to ExampleTest. This shows how arguments are actually parsed.
+","6fb79d861046b7d14085c65bb90c7a00388ca1a6","Ian Flanigan"
+"124","testForbidArgs","testForbidArgs","2","Body Change, Exceptions Change, Introduced, MultiChange","Merge branch 'pull-63'
+
+Conflicts:
+	args4j-maven-plugin/src/main/java/org/kohsuke/args4j/maven/Args4jUsageMojo.java
+","df6ffa4b77ddbc64999448dec3e9d82eb0978269","Kohsuke Kawaguchi"
+"125","testNoOptionsSort","testNoOptionsSort","6","File Renamed","Adds tests for parsing of arguments to ExampleTest. This shows how arguments are actually parsed.
+","6fb79d861046b7d14085c65bb90c7a00388ca1a6","Ian Flanigan"
+"126","testNoOptionsSort","testNoOptionsSort","6","Body Change, Introduced, MultiChange","added tests for ParserProperties and no-sort of options
+","92c5b862e67a06620a3ea12a168ace750401d0c9","Erb"
+"127","testNoOptionsSort","testNoOptionsSort","6","Body Change","ParserProperties is only place to store the settings
+","1a00f13387d96041698bfd2e5c5f5e39f20fefdf","Erb"
+"128","testNoOptionsSort","testNoOptionsSort","6","Body Change","make ParserProperties more compliant to the standard builder pattern
+","98617f68d1fc9e175d19822d33ed3f8785bfac4a","Erb"
+"129","testNoOptionsSort","testNoOptionsSort","6","Body Change","More generic to allow Comparator, not just a boolean
+","94eb6d9043f545f85c943529f76c1835598c8fda","Kohsuke Kawaguchi"
+"130","testNoOptionsSort","testNoOptionsSort","6","Body Change","Fixing the inconsistency in naming methods
+","c055070b63d16072adb92536bf3d2814d29e453a","Kohsuke Kawaguchi"
+"131","doMain","doMain","5","Exceptions Change","implemented metavariable support.
+","a5f06b369490d93f37c354f03f0982d42bf39718","kohsuke"
+"132","doMain","doMain","5","Body Change, Exceptions Change, MultiChange","added printExample.
+","83a4706542570934b628fa9838584dc6d7bc7124","kohsuke"
+"133","doMain","doMain","5","Body Change, Exceptions Change, MultiChange","Usage info for the -custom option and use of that data.
+","5a1f2aeca8a6b69a868fc53e1e1ce57dff2ee732","jhm"
+"134","doMain","doMain","5","Body Change, Exceptions Change, MultiChange","Document the  setUsageWidth()  method.
+","81ad500a8e0daa190bbc5f66208d851c9fcd31f8","jhm"
+"135","doMain","doMain","5","Body Change, Exceptions Change, MultiChange","Merge pull request #8 from oluies/patch-1
+
+deprecreated constructor in example","879b74b996a2f98b65141866c461ac17e7086d52","Kohsuke Kawaguchi"
+"136","CmdLineParser","CmdLineParser","14","Body Change, Exceptions Change, MultiChange","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"137","CmdLineParser","CmdLineParser","14","Body Change, Exceptions Change, MultiChange","- implemented the stop option ""--"".
+- added a test case for it.
+- modified to use generics to avoid casting in test case.
+","fa1c0a620764bd15f5f69faf56e4907235490000","kohsuke"
+"138","CmdLineParser","CmdLineParser","14","Exceptions Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"139","CmdLineParser","CmdLineParser","14","Exceptions Change","CmdLineParser now correctly identifies long option values (that was missing from the previous commit)
+","63d35cd77540b298eea313dfe7ef395e9dc73a6f","marksinke"
+"140","CmdLineParser","CmdLineParser","14","Body Change, Exceptions Change, MultiChange","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"141","CmdLineParser","CmdLineParser","14","Body Change, Exceptions Change, MultiChange","Prepare for alternative 'markup' (instead of Annotations)
+","86a083624034798d9a1bbc35dfa98acaa7cd283d","jhm"
+"142","CmdLineParser","CmdLineParser","14","Body Change, Exceptions Change, MultiChange","this must be a left-over debug statement.
+","1cc855e946670a94428d8014ee881dfbcdbe17dc","kohsuke"
+"143","CmdLineParser","CmdLineParser","14","Body Change, Exceptions Change, MultiChange","- final implementation of XML parsing
+- copy required test resources to the test classpath
+- javadoc
+","6259586cc463554564f6b0374d95a93cded39d28","jhm"
+"144","CmdLineParser","CmdLineParser","14","Body Change, Exceptions Change, MultiChange","- removed dupliation.
+- removed the bean field to make room for multi-bean binding.
+","83bf6d79ccb1cd6be4b75180bbc38c532a3ca73d","kohsuke"
+"145","CmdLineParser","CmdLineParser","14","Body Change, Exceptions Change, MultiChange","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"146","CmdLineParser","CmdLineParser","14","Body Change","Wasnt sure by myself, so document after a test
+","9b8dc05015eb1a877eedc5445a04f8043e489701","jhm"
+"147","CmdLineParser","CmdLineParser","14","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"148","CmdLineParser","CmdLineParser","14","Body Change, Exceptions Change, MultiChange","new constructor for CmdLineParser to optionally not sort options. This is because the order of the options might be purposeful, for example grouping them logically.
+","1a0e18d83a690fc64a0a2ba87f1330de8137c558","Erb"
+"149","CmdLineParser","CmdLineParser","14","Exceptions Change","pass parameters into CmdLineParser constructor in a way inspired by Typesafe config API
+","0606791470fffe702cfbf33ab2b7b04eb6902870","Erb"
+"150","CmdLineParser","CmdLineParser","6","Body Change, Exceptions Change, Introduced, MultiChange","pass parameters into CmdLineParser constructor in a way inspired by Typesafe config API
+","0606791470fffe702cfbf33ab2b7b04eb6902870","Erb"
+"151","CmdLineParser","CmdLineParser","6","Exceptions Change","ParserProperties is only place to store the settings
+","1a00f13387d96041698bfd2e5c5f5e39f20fefdf","Erb"
+"152","CmdLineParser","CmdLineParser","6","Body Change, Exceptions Change, MultiChange","ParserProperties is only place to store the settings (fixed)
+","1b5136f66e39131cf8d147416c90630ee1026ebe","Erb"
+"153","CmdLineParser","CmdLineParser","6","Exceptions Change","make ParserProperties more compliant to the standard builder pattern
+","98617f68d1fc9e175d19822d33ed3f8785bfac4a","Erb"
+"154","CmdLineParser","CmdLineParser","6","Body Change, Exceptions Change, MultiChange","More generic to allow Comparator, not just a boolean
+","94eb6d9043f545f85c943529f76c1835598c8fda","Kohsuke Kawaguchi"
+"155","CmdLineParser","CmdLineParser","6","Exceptions Change","Fixing the inconsistency in naming methods
+","c055070b63d16072adb92536bf3d2814d29e453a","Kohsuke Kawaguchi"
+"156","getProperties","getProperties","2","File Renamed","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"157","getProperties","getProperties","2","Body Change, Introduced, MultiChange","Generalizing this by allowing arbitrary string
+","58ed80598033b0e4e89fbd19b8d33ea3c291910c","Kohsuke Kawaguchi"
+"158","addArgument","addArgument","7","Body Change, Introduced, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"159","addArgument","addArgument","7","Modifier Change","Make CmdLineParser.addArgument() + .addOption() public.
+As suggested by Ulrik Sjolin
+","d1ad6d47baf38c3fcf1836b5ce89c9dda3f302b7","jhm"
+"160","addArgument","addArgument","7","Body Change, Exceptions Change, MultiChange","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"161","addArgument","addArgument","7","Body Change, Exceptions Change, MultiChange","Merge pull request #69 from sfuhrm/code-cleanups-2
+
+Code cleanups 2","9d8c90bd0edcf4be12d380555087a7703be6416b","Kohsuke Kawaguchi"
+"162","addArgument","addArgument","7","Body Change, Exceptions Change, MultiChange","Merge branch 'optionhandlerregistry' of https://github.com/sfuhrm/args4j into optionhandlerregistry
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","1e85f8a904541424b592659995dc5a40a1ba6056","Stephan Fuhrmann"
+"163","addArgument","addArgument","7","Body Change, Exceptions Change, MultiChange","Merge pull request #110 from englishman/check-not-null-usage-fix
+
+use Utilities.chechNotNull anywhere","0ccd40b236bf9054670458d8c216705fcdbf912d","Kohsuke Kawaguchi"
+"164","addArgument","addArgument","7","Body Change, Exceptions Change, MultiChange","Merge pull request #112 from davido/patch-1
+
+CmdLineParser: mark createOptionHandler() as non-deprecated","17bf92cf7ecd2f9f4a53a0c570b3b0e789a5976e","Kohsuke Kawaguchi"
+"165","addOption","addOption","12","Body Change, Exceptions Change, MultiChange","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"166","addOption","addOption","12","Body Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"167","addOption","addOption","12","Body Change","Obtained from: Igor Lankin
+Submitted by:  Igor Lankin
+Reviewed by:   Mark Sinke
+
+Add aliases to option names.
+","27cab037bba3ed35fa43f07bc95b25a69fbec779","marksinke"
+"168","addOption","addOption","12","Body Change","CmdLineParser now correctly identifies long option values (that was missing from the previous commit)
+","63d35cd77540b298eea313dfe7ef395e9dc73a6f","marksinke"
+"169","addOption","addOption","12","Modifier Change","Make CmdLineParser.addArgument() + .addOption() public.
+As suggested by Ulrik Sjolin
+","d1ad6d47baf38c3fcf1836b5ce89c9dda3f302b7","jhm"
+"170","addOption","addOption","12","Body Change","- final implementation of XML parsing
+- copy required test resources to the test classpath
+- javadoc
+","6259586cc463554564f6b0374d95a93cded39d28","jhm"
+"171","addOption","addOption","12","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"172","addOption","addOption","12","Body Change, Exceptions Change, MultiChange","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"173","addOption","addOption","12","Body Change, Exceptions Change, MultiChange","Merge pull request #69 from sfuhrm/code-cleanups-2
+
+Code cleanups 2","9d8c90bd0edcf4be12d380555087a7703be6416b","Kohsuke Kawaguchi"
+"174","addOption","addOption","12","Body Change, Exceptions Change, MultiChange","Merge branch 'optionhandlerregistry' of https://github.com/sfuhrm/args4j into optionhandlerregistry
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","1e85f8a904541424b592659995dc5a40a1ba6056","Stephan Fuhrmann"
+"175","addOption","addOption","12","Body Change, Exceptions Change, MultiChange","Rely on static imports
+","c5dfcfe0ae1d5d90e5783b81279aba38ad99a11b","Kohsuke Kawaguchi"
+"176","addOption","addOption","12","Exceptions Change","Merge pull request #112 from davido/patch-1
+
+CmdLineParser: mark createOptionHandler() as non-deprecated","17bf92cf7ecd2f9f4a53a0c570b3b0e789a5976e","Kohsuke Kawaguchi"
+"177","getArguments","getArguments","1","Body Change, Introduced, MultiChange","Exposing arguments directly.
+","40875c1eae65ab935e392c92e4d1ec1ad50802cd","kohsuke"
+"178","getOptions","getOptions","1","Body Change, Introduced, MultiChange","Merge branch 'pull-20'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","55df1bd74c0da327737c26816e49c20667ba531a","Kohsuke Kawaguchi"
+"179","checkOptionNotInMap","checkOptionNotInMap","7","File Renamed","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"180","checkOptionNotInMap","checkOptionNotInMap","7","Body Change, Exceptions Change, Introduced, MultiChange","CmdLineParser now correctly identifies long option values (that was missing from the previous commit)
+","63d35cd77540b298eea313dfe7ef395e9dc73a6f","marksinke"
+"181","checkOptionNotInMap","checkOptionNotInMap","7","Body Change, Exceptions Change, MultiChange","Found some not externalized Messages.
+","ffe93fba1387b096dfb751b4c57ab9fe3df5681c","jhm"
+"182","checkOptionNotInMap","checkOptionNotInMap","7","Body Change, Exceptions Change, MultiChange","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"183","checkOptionNotInMap","checkOptionNotInMap","7","Body Change, Exceptions Change, MultiChange","Merge pull request #69 from sfuhrm/code-cleanups-2
+
+Code cleanups 2","9d8c90bd0edcf4be12d380555087a7703be6416b","Kohsuke Kawaguchi"
+"184","checkOptionNotInMap","checkOptionNotInMap","7","Body Change, Exceptions Change, MultiChange","Merge branch 'optionhandlerregistry' of https://github.com/sfuhrm/args4j into optionhandlerregistry
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","1e85f8a904541424b592659995dc5a40a1ba6056","Stephan Fuhrmann"
+"185","checkOptionNotInMap","checkOptionNotInMap","7","Body Change, Exceptions Change, MultiChange","Rely on static imports
+","c5dfcfe0ae1d5d90e5783b81279aba38ad99a11b","Kohsuke Kawaguchi"
+"186","createOptionHandler","createOptionHandler","7","Body Change, Introduced, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"187","createOptionHandler","createOptionHandler","7","Modifier Change, Body Change, MultiChange","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"188","createOptionHandler","createOptionHandler","7","Body Change","- final implementation of XML parsing
+- copy required test resources to the test classpath
+- javadoc
+","6259586cc463554564f6b0374d95a93cded39d28","jhm"
+"189","createOptionHandler","createOptionHandler","7","Body Change","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"190","createOptionHandler","createOptionHandler","7","Body Change","Merge pull request #69 from sfuhrm/code-cleanups-2
+
+Code cleanups 2","9d8c90bd0edcf4be12d380555087a7703be6416b","Kohsuke Kawaguchi"
+"191","createOptionHandler","createOptionHandler","7","Modifier Change, Body Change, MultiChange","Merge branch 'optionhandlerregistry' of https://github.com/sfuhrm/args4j into optionhandlerregistry
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","1e85f8a904541424b592659995dc5a40a1ba6056","Stephan Fuhrmann"
+"192","createOptionHandler","createOptionHandler","7","Body Change","Merge pull request #112 from davido/patch-1
+
+CmdLineParser: mark createOptionHandler() as non-deprecated","17bf92cf7ecd2f9f4a53a0c570b3b0e789a5976e","Kohsuke Kawaguchi"
+"193","printExample","printExample","2","Body Change, Introduced, MultiChange","Merge branch 'pull-20'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","55df1bd74c0da327737c26816e49c20667ba531a","Kohsuke Kawaguchi"
+"194","printExample","printExample","2","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"195","printExample","printExample","2","Body Change, Introduced, MultiChange","implemented the printExample method.
+","841821273e4c03bbbdeec6eec8ac8aa60006898e","kohsuke"
+"196","printExample","printExample","2","Body Change","Merge branch 'pull-20'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","55df1bd74c0da327737c26816e49c20667ba531a","Kohsuke Kawaguchi"
+"197","printExample","printExample","9","Body Change, Introduced, MultiChange","Merge branch 'pull-20'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","55df1bd74c0da327737c26816e49c20667ba531a","Kohsuke Kawaguchi"
+"198","printExample","printExample","9","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"199","printExample","printExample","9","Body Change, Exceptions Change, MultiChange","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"200","printExample","printExample","9","Exceptions Change","Merge pull request #69 from sfuhrm/code-cleanups-2
+
+Code cleanups 2","9d8c90bd0edcf4be12d380555087a7703be6416b","Kohsuke Kawaguchi"
+"201","printExample","printExample","9","Exceptions Change","Merge pull request #73
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","da7de2b8b1be12fb646997b97d2deec63eaa4c0b","Kohsuke Kawaguchi"
+"202","printExample","printExample","9","Exceptions Change","Moving the setting to ParserProperties
+","03e32ef3083b23760d543dc6aab117df3909ded8","Kohsuke Kawaguchi"
+"203","printExample","printExample","9","Exceptions Change","Merge branch 'optionhandlerregistry' of https://github.com/sfuhrm/args4j into optionhandlerregistry
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","1e85f8a904541424b592659995dc5a40a1ba6056","Stephan Fuhrmann"
+"204","printExample","printExample","9","Body Change","Merge pull request #81 from sfuhrm/JavaDocFix
+
+Java doc fixes","063d2734c4086b459aea136511b2a4cebe02bee4","Kohsuke Kawaguchi"
+"205","printExample","printExample","9","Exceptions Change","Merge pull request #110 from englishman/check-not-null-usage-fix
+
+use Utilities.chechNotNull anywhere","0ccd40b236bf9054670458d8c216705fcdbf912d","Kohsuke Kawaguchi"
+"206","printExample","printExample","2","Body Change, Introduced, MultiChange","implemented the printExample method.
+","841821273e4c03bbbdeec6eec8ac8aa60006898e","kohsuke"
+"207","printExample","printExample","2","Body Change","Merge branch 'pull-20'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","55df1bd74c0da327737c26816e49c20667ba531a","Kohsuke Kawaguchi"
+"208","printUsage","printUsage","2","Body Change","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"209","printUsage","printUsage","2","Body Change","javadoc improvement
+","ef8fac1c74409a3027f616e1a412483093fb17f1","kohsuke"
+"210","printUsage","printUsage","5","Body Change","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"211","printUsage","printUsage","5","Body Change","implemented metavariable support.
+","a5f06b369490d93f37c354f03f0982d42bf39718","kohsuke"
+"212","printUsage","printUsage","5","Body Change","Issue number:  3
+Obtained from: lstadler
+
+Possibility to specify line width in printUsage. Done via parser configuration.
+","d5905e097d87938fba92ac54647d62ce56eb4ea2","jhm"
+"213","printUsage","printUsage","5","Body Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"214","printUsage","printUsage","5","Body Change","Merge branch 'pull-20'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","55df1bd74c0da327737c26816e49c20667ba531a","Kohsuke Kawaguchi"
+"215","printUsage","printUsage","2","Body Change, Introduced, MultiChange","Merge branch 'pull-20'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","55df1bd74c0da327737c26816e49c20667ba531a","Kohsuke Kawaguchi"
+"216","printUsage","printUsage","2","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"217","printOption","printOption","4","Body Change, Introduced, MultiChange","Merge branch 'pull-20'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","55df1bd74c0da327737c26816e49c20667ba531a","Kohsuke Kawaguchi"
+"218","printOption","printOption","4","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"219","printOption","printOption","4","Body Change","ParserProperties is only place to store the settings
+","1a00f13387d96041698bfd2e5c5f5e39f20fefdf","Erb"
+"220","printOption","printOption","4","Body Change","Merge pull request #102
+","07c72a2f99dd4b3eccd1395f91313c81cb314cc6","Kohsuke Kawaguchi"
+"221","createDefaultValuePart","createDefaultValuePart","2","File Renamed","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"222","createDefaultValuePart","createDefaultValuePart","2","Body Change, Introduced, MultiChange","Merge pull request #102
+","07c72a2f99dd4b3eccd1395f91313c81cb314cc6","Kohsuke Kawaguchi"
+"223","localize","localize","1","Body Change, Introduced, MultiChange","fixed a bug pointed out by vlad smyshlyaev <albedo072@gmail.com>
+","5b94b7411d1ec5ed6ad4278a9e576241ac10b568","kohsuke"
+"224","wrapLines","wrapLines","1","Body Change, Introduced, MultiChange","improved line wrapping
+","6a0c6a9c64e8b75c2741cf32ccd6d7fb9fd382b8","kohsuke"
+"225","getPrefixLen","getPrefixLen","4","Body Change, Introduced, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"226","getPrefixLen","getPrefixLen","4","Body Change","Obtained from: Igor Lankin
+Submitted by:  Igor Lankin
+Reviewed by:   Mark Sinke
+
+Add aliases to option names.
+","27cab037bba3ed35fa43f07bc95b25a69fbec779","marksinke"
+"227","getPrefixLen","getPrefixLen","4","Body Change","Merge pull request #73
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","da7de2b8b1be12fb646997b97d2deec63eaa4c0b","Kohsuke Kawaguchi"
+"228","getPrefixLen","getPrefixLen","4","Body Change","Moving the setting to ParserProperties
+","03e32ef3083b23760d543dc6aab117df3909ded8","Kohsuke Kawaguchi"
+"229","hasMore","hasMore","1","Modifier Change","Refactoring on CmdLineParser for more commonality between options and arguments
+","b94fb5cd7bc9c2701dc19b761548628f53e4b0af","marksinke"
+"230","getCurrentToken","getCurrentToken","1","Modifier Change","Refactoring on CmdLineParser for more commonality between options and arguments
+","b94fb5cd7bc9c2701dc19b761548628f53e4b0af","marksinke"
+"231","getParameter","getParameter","9","Body Change, Exceptions Change, MultiChange","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"232","getParameter","getParameter","9","Body Change, Exceptions Change, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"233","getParameter","getParameter","9","Modifier Change","Submitted by:  Mark Sinke
+Just a small commit to add more @Override tags (keeping my Eclipse IDE happier)
+","38e6d2925ee56762c8ec6ce3ef6c67e28ec63573","marksinke"
+"234","getParameter","getParameter","9","Modifier Change, Body Change, Exceptions Change, MultiChange","Refactoring on CmdLineParser for more commonality between options and arguments
+","b94fb5cd7bc9c2701dc19b761548628f53e4b0af","marksinke"
+"235","getParameter","getParameter","9","Body Change, Exceptions Change, MultiChange","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"236","getParameter","getParameter","9","Body Change, Exceptions Change, MultiChange","Merge pull request #36 from MikeMatrix/master
+
+Simple underflow check, for more sensible exception","a37616e0fdedd10c2f74006546b4ea979a806bab","Kohsuke Kawaguchi"
+"237","getParameter","getParameter","9","Exceptions Change","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"238","getParameter","getParameter","9","Modifier Change","Merge branch 'optionhandlerregistry' of https://github.com/sfuhrm/args4j into optionhandlerregistry
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","1e85f8a904541424b592659995dc5a40a1ba6056","Stephan Fuhrmann"
+"239","getParameter","getParameter","9","Modifier Change","Rely on static imports
+","c5dfcfe0ae1d5d90e5783b81279aba38ad99a11b","Kohsuke Kawaguchi"
+"240","size","size","4","File Renamed","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"241","size","size","4","Body Change, Introduced, MultiChange","added a method to return the # of remaining tokens.
+","ccc09f4b428ccc76091df0447192cb5bfa91f8c3","kohsuke"
+"242","size","size","4","Modifier Change","Merge branch 'optionhandlerregistry' of https://github.com/sfuhrm/args4j into optionhandlerregistry
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","1e85f8a904541424b592659995dc5a40a1ba6056","Stephan Fuhrmann"
+"243","size","size","4","Modifier Change","Rely on static imports
+","c5dfcfe0ae1d5d90e5783b81279aba38ad99a11b","Kohsuke Kawaguchi"
+"244","splitToken","splitToken","1","Body Change, Introduced, MultiChange","Merged pull request #30
+","8ba661f8c3850b49de4e5f4ddb241d68a54d8da2","Kohsuke Kawaguchi"
+"245","getOptionName","getOptionName","3","Modifier Change","Submitted by:  Mark Sinke
+Just a small commit to add more @Override tags (keeping my Eclipse IDE happier)
+","38e6d2925ee56762c8ec6ce3ef6c67e28ec63573","marksinke"
+"246","getOptionName","getOptionName","3","Modifier Change, Body Change, MultiChange","Refactoring on CmdLineParser for more commonality between options and arguments
+","b94fb5cd7bc9c2701dc19b761548628f53e4b0af","marksinke"
+"247","getOptionName","getOptionName","3","Body Change","Obtained from: Igor Lankin
+Submitted by:  Igor Lankin
+Reviewed by:   Mark Sinke
+
+Add aliases to option names.
+","27cab037bba3ed35fa43f07bc95b25a69fbec779","marksinke"
+"248","parseArgument","parseArgument","2","Body Change, Exceptions Change, Introduced, MultiChange","added a convenient overload.
+","27f98eeec1b29304351afe1e19ac533158cb5200","kohsuke"
+"249","parseArgument","parseArgument","2","Body Change","Merge pull request #65 from thomas-mc-work/master
+
+print seperating colon in usage only for the first line","2ad9f552bafc1781d6512d44a962e4d6ef02e2a7","Kohsuke Kawaguchi"
+"250","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"251","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","implemented issue 1: required option.
+","12e20a92a6a2bab6214dcc4530e713192fd7a4c5","kohsuke"
+"252","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Issue number:  3
+Obtained from: lstadler
+
+Possibility to specify line width in printUsage. Done via parser configuration.
+","d5905e097d87938fba92ac54647d62ce56eb4ea2","jhm"
+"253","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"254","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Refactoring on CmdLineParser for more commonality between options and arguments
+","b94fb5cd7bc9c2701dc19b761548628f53e4b0af","marksinke"
+"255","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Obtained from: Igor Lankin
+Submitted by:  Igor Lankin
+Reviewed by:   Mark Sinke
+
+Add aliases to option names.
+","27cab037bba3ed35fa43f07bc95b25a69fbec779","marksinke"
+"256","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","CmdLineParser now correctly identifies long option values (that was missing from the previous commit)
+","63d35cd77540b298eea313dfe7ef395e9dc73a6f","marksinke"
+"257","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"258","parseArgument","parseArgument","21","Body Change","Prepare for alternative 'markup' (instead of Annotations)
+","86a083624034798d9a1bbc35dfa98acaa7cd283d","jhm"
+"259","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Fixed issue #10.
+
+If the argument index has some gaps, report the error accordingly.
+","d729f9a6700aa9cef64b574c46237d7c8be4a4fb","Kohsuke Kawaguchi"
+"260","parseArgument","parseArgument","21","Exceptions Change","Merge branch 'pull-14'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/Messages.java
+	args4j/src/org/kohsuke/args4j/Messages.properties
+	args4j/src/org/kohsuke/args4j/Option.java
+","eb74997416d4e91ff31b4b720f576ab944abfe08","Kohsuke Kawaguchi"
+"261","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Merged pull request #30
+","8ba661f8c3850b49de4e5f4ddb241d68a54d8da2","Kohsuke Kawaguchi"
+"262","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Merge pull request #60 from sfuhrm/help-options
+
+Help parameter introduction like seen in JCommander","668ace8644d0d34f4e97d78fdbe154b25317ddea","Kohsuke Kawaguchi"
+"263","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"264","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"265","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Merge pull request #69 from sfuhrm/code-cleanups-2
+
+Code cleanups 2","9d8c90bd0edcf4be12d380555087a7703be6416b","Kohsuke Kawaguchi"
+"266","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Merge pull request #75
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","6964adf46e56cccc479e115a564492062d535295","Kohsuke Kawaguchi"
+"267","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Using the new delimiter for parsing as well
+","8af18273cdd3c4103b1c1e087b94ffff495c6347","Kohsuke Kawaguchi"
+"268","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Merge branch 'optionhandlerregistry' of https://github.com/sfuhrm/args4j into optionhandlerregistry
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","1e85f8a904541424b592659995dc5a40a1ba6056","Stephan Fuhrmann"
+"269","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Merge pull request #82 from sfuhrm/atsyntax-config
+
+Option to disable the at-syntax","affa7ff2893858fa3752ddd6e652cc64ee514d3b","Kohsuke Kawaguchi"
+"270","parseArgument","parseArgument","21","Body Change, Exceptions Change, MultiChange","Merge pull request #110 from englishman/check-not-null-usage-fix
+
+use Utilities.chechNotNull anywhere","0ccd40b236bf9054670458d8c216705fcdbf912d","Kohsuke Kawaguchi"
+"271","expandAtFiles","expandAtFiles","1","Body Change, Exceptions Change, Introduced, MultiChange","Merge pull request #75
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","6964adf46e56cccc479e115a564492062d535295","Kohsuke Kawaguchi"
+"272","readAllLines","readAllLines","1","Body Change, Exceptions Change, Introduced, MultiChange","Merge pull request #75
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","6964adf46e56cccc479e115a564492062d535295","Kohsuke Kawaguchi"
+"273","checkRequiredOptionsAndArguments","checkRequiredOptionsAndArguments","5","File Renamed","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"274","checkRequiredOptionsAndArguments","checkRequiredOptionsAndArguments","5","Body Change, Exceptions Change, Introduced, MultiChange","Merge pull request #60 from sfuhrm/help-options
+
+Help parameter introduction like seen in JCommander","668ace8644d0d34f4e97d78fdbe154b25317ddea","Kohsuke Kawaguchi"
+"275","checkRequiredOptionsAndArguments","checkRequiredOptionsAndArguments","5","Body Change, Exceptions Change, MultiChange","Merge branch 'pull-63'
+
+Conflicts:
+	args4j-maven-plugin/src/main/java/org/kohsuke/args4j/maven/Args4jUsageMojo.java
+","df6ffa4b77ddbc64999448dec3e9d82eb0978269","Kohsuke Kawaguchi"
+"276","checkRequiredOptionsAndArguments","checkRequiredOptionsAndArguments","5","Body Change, Exceptions Change, MultiChange","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"277","checkRequiredOptionsAndArguments","checkRequiredOptionsAndArguments","5","Exceptions Change","Avoid using deprecated methods
+","c8c4defcba44aa562b32c6d9ac26986c971fd768","Kohsuke Kawaguchi"
+"278","isHandlerHasHisOptions","isHandlerHasHisOptions","4","Body Change, Introduced, MultiChange","Merge branch 'pull-14'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/Messages.java
+	args4j/src/org/kohsuke/args4j/Messages.properties
+	args4j/src/org/kohsuke/args4j/Option.java
+","eb74997416d4e91ff31b4b720f576ab944abfe08","Kohsuke Kawaguchi"
+"279","isHandlerHasHisOptions","isHandlerHasHisOptions","4","Body Change","TAB->WS
+","df010e3fb956910ecfce9bb0ff238a03ab1efba9","Kohsuke Kawaguchi"
+"280","isHandlerHasHisOptions","isHandlerHasHisOptions","4","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"281","isHandlerHasHisOptions","isHandlerHasHisOptions","4","Body Change","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"282","isHandlerAllowOtherOptions","isHandlerAllowOtherOptions","2","Body Change, Introduced, MultiChange","Merge branch 'pull-63'
+
+Conflicts:
+	args4j-maven-plugin/src/main/java/org/kohsuke/args4j/maven/Args4jUsageMojo.java
+","df6ffa4b77ddbc64999448dec3e9d82eb0978269","Kohsuke Kawaguchi"
+"283","isHandlerAllowOtherOptions","isHandlerAllowOtherOptions","2","Body Change","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"284","findOptionHandler","findOptionHandler","6","File Renamed","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"285","findOptionHandler","findOptionHandler","6","Body Change, Introduced, MultiChange","Issue number:  3
+Obtained from: lstadler
+
+Possibility to specify line width in printUsage. Done via parser configuration.
+","d5905e097d87938fba92ac54647d62ce56eb4ea2","jhm"
+"286","findOptionHandler","findOptionHandler","6","Body Change","CmdLineParser now correctly identifies long option values (that was missing from the previous commit)
+","63d35cd77540b298eea313dfe7ef395e9dc73a6f","marksinke"
+"287","findOptionHandler","findOptionHandler","6","Body Change","Prepare for alternative 'markup' (instead of Annotations)
+","86a083624034798d9a1bbc35dfa98acaa7cd283d","jhm"
+"288","findOptionHandler","findOptionHandler","6","Body Change","Merge pull request #73
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","da7de2b8b1be12fb646997b97d2deec63eaa4c0b","Kohsuke Kawaguchi"
+"289","findOptionHandler","findOptionHandler","6","Body Change","Using the new delimiter for parsing as well
+","8af18273cdd3c4103b1c1e087b94ffff495c6347","Kohsuke Kawaguchi"
+"290","findOptionByName","findOptionByName","2","Body Change, Introduced, MultiChange","CmdLineParser now correctly identifies long option values (that was missing from the previous commit)
+","63d35cd77540b298eea313dfe7ef395e9dc73a6f","marksinke"
+"291","findOptionByName","findOptionByName","2","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"292","isOption","isOption","7","Modifier Change, Exceptions Change, MultiChange","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"293","isOption","isOption","7","Body Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"294","isOption","isOption","7","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"295","isOption","isOption","7","Body Change, Exceptions Change, MultiChange","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"296","isOption","isOption","7","Body Change, Exceptions Change, MultiChange","Merge pull request #69 from sfuhrm/code-cleanups-2
+
+Code cleanups 2","9d8c90bd0edcf4be12d380555087a7703be6416b","Kohsuke Kawaguchi"
+"297","isOption","isOption","7","Exceptions Change","Merge branch 'optionhandlerregistry' of https://github.com/sfuhrm/args4j into optionhandlerregistry
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","1e85f8a904541424b592659995dc5a40a1ba6056","Stephan Fuhrmann"
+"298","isOption","isOption","7","Exceptions Change","Merge pull request #110 from englishman/check-not-null-usage-fix
+
+use Utilities.chechNotNull anywhere","0ccd40b236bf9054670458d8c216705fcdbf912d","Kohsuke Kawaguchi"
+"299","registerHandler","registerHandler","5","Body Change, Exceptions Change, MultiChange","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"300","registerHandler","registerHandler","5","Body Change, Exceptions Change, MultiChange","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"301","registerHandler","registerHandler","5","Exceptions Change","Merge pull request #69 from sfuhrm/code-cleanups-2
+
+Code cleanups 2","9d8c90bd0edcf4be12d380555087a7703be6416b","Kohsuke Kawaguchi"
+"302","registerHandler","registerHandler","5","Body Change, Exceptions Change, MultiChange","Merge branch 'optionhandlerregistry' of https://github.com/sfuhrm/args4j into optionhandlerregistry
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","1e85f8a904541424b592659995dc5a40a1ba6056","Stephan Fuhrmann"
+"303","registerHandler","registerHandler","5","Exceptions Change","Rely on static imports
+","c5dfcfe0ae1d5d90e5783b81279aba38ad99a11b","Kohsuke Kawaguchi"
+"304","setUsageWidth","setUsageWidth","4","Body Change, Introduced, MultiChange","Issue number:  3
+Obtained from: lstadler
+
+Possibility to specify line width in printUsage. Done via parser configuration.
+","d5905e097d87938fba92ac54647d62ce56eb4ea2","jhm"
+"305","setUsageWidth","setUsageWidth","4","Body Change, Exceptions Change, MultiChange","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"306","setUsageWidth","setUsageWidth","4","Body Change, Exceptions Change, MultiChange","ParserProperties is only place to store the settings
+","1a00f13387d96041698bfd2e5c5f5e39f20fefdf","Erb"
+"307","setUsageWidth","setUsageWidth","4","Body Change, Exceptions Change, MultiChange","With ParserProperties, this became redundant
+","db910920b40da318a9c63ac547ad6aae22be06de","Kohsuke Kawaguchi"
+"308","stopOptionParsing","stopOptionParsing","1","Body Change, Introduced, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"309","printSingleLineUsage","printSingleLineUsage","5","Body Change, Introduced, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"310","printSingleLineUsage","printSingleLineUsage","5","Body Change, Exceptions Change, MultiChange","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"311","printSingleLineUsage","printSingleLineUsage","5","Body Change, Exceptions Change, MultiChange","Merge pull request #69 from sfuhrm/code-cleanups-2
+
+Code cleanups 2","9d8c90bd0edcf4be12d380555087a7703be6416b","Kohsuke Kawaguchi"
+"312","printSingleLineUsage","printSingleLineUsage","5","Exceptions Change","Merge branch 'optionhandlerregistry' of https://github.com/sfuhrm/args4j into optionhandlerregistry
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","1e85f8a904541424b592659995dc5a40a1ba6056","Stephan Fuhrmann"
+"313","printSingleLineUsage","printSingleLineUsage","5","Exceptions Change","Rely on static imports
+","c5dfcfe0ae1d5d90e5783b81279aba38ad99a11b","Kohsuke Kawaguchi"
+"314","printSingleLineUsage","printSingleLineUsage","7","Body Change, Introduced, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"315","printSingleLineUsage","printSingleLineUsage","7","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"316","printSingleLineUsage","printSingleLineUsage","7","Body Change, Exceptions Change, MultiChange","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"317","printSingleLineUsage","printSingleLineUsage","7","Body Change, Exceptions Change, MultiChange","Merge pull request #69 from sfuhrm/code-cleanups-2
+
+Code cleanups 2","9d8c90bd0edcf4be12d380555087a7703be6416b","Kohsuke Kawaguchi"
+"318","printSingleLineUsage","printSingleLineUsage","7","Body Change","ParserProperties is only place to store the settings
+","1a00f13387d96041698bfd2e5c5f5e39f20fefdf","Erb"
+"319","printSingleLineUsage","printSingleLineUsage","7","Exceptions Change","Merge branch 'optionhandlerregistry' of https://github.com/sfuhrm/args4j into optionhandlerregistry
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","1e85f8a904541424b592659995dc5a40a1ba6056","Stephan Fuhrmann"
+"320","printSingleLineUsage","printSingleLineUsage","7","Exceptions Change","Merge pull request #110 from englishman/check-not-null-usage-fix
+
+use Utilities.chechNotNull anywhere","0ccd40b236bf9054670458d8c216705fcdbf912d","Kohsuke Kawaguchi"
+"321","printSingleLineOption","printSingleLineOption","3","Body Change, Introduced, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"322","printSingleLineOption","printSingleLineOption","3","Body Change","Obtained from: Igor Lankin
+Submitted by:  Igor Lankin
+Reviewed by:   Mark Sinke
+
+Add aliases to option names.
+","27cab037bba3ed35fa43f07bc95b25a69fbec779","marksinke"
+"323","printSingleLineOption","printSingleLineOption","3","Body Change","Merge pull request #73
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","da7de2b8b1be12fb646997b97d2deec63eaa4c0b","Kohsuke Kawaguchi"
+"324","ParserProperties","ParserProperties","1","Introduced","make ParserProperties more compliant to the standard builder pattern
+","98617f68d1fc9e175d19822d33ed3f8785bfac4a","Erb"
+"325","defaults","defaults","3","Body Change","defaults for CmdLineParser in only one place (ParserProperties)
+","8ba724fe08e5e48995aeb6e0a9b288f8f753080d","Erb"
+"326","defaults","defaults","3","Body Change","make ParserProperties more compliant to the standard builder pattern
+","98617f68d1fc9e175d19822d33ed3f8785bfac4a","Erb"
+"327","defaults","defaults","3","Body Change","Merge pull request #78 from sfuhrm/naming-consistency
+
+Naming consistency","0564bb3a7e583cb7ac00c37abab38acc06766f8e","Kohsuke Kawaguchi"
+"328","withAtSyntax","withAtSyntax","1","Body Change, Introduced, MultiChange","Merge pull request #82 from sfuhrm/atsyntax-config
+
+Option to disable the at-syntax","affa7ff2893858fa3752ddd6e652cc64ee514d3b","Kohsuke Kawaguchi"
+"329","getAtSyntax","getAtSyntax","1","Body Change, Introduced, MultiChange","Merge pull request #82 from sfuhrm/atsyntax-config
+
+Option to disable the at-syntax","affa7ff2893858fa3752ddd6e652cc64ee514d3b","Kohsuke Kawaguchi"
+"330","withShowDefaults","withShowDefaults","1","Body Change, Introduced, MultiChange","Merge pull request #102
+","07c72a2f99dd4b3eccd1395f91313c81cb314cc6","Kohsuke Kawaguchi"
+"331","getShowDefaults","getShowDefaults","1","Body Change, Introduced, MultiChange","Merge pull request #102
+","07c72a2f99dd4b3eccd1395f91313c81cb314cc6","Kohsuke Kawaguchi"
+"332","withUsageWidth","withUsageWidth","3","Body Change, Exceptions Change, MultiChange","defaults for CmdLineParser in only one place (ParserProperties)
+","8ba724fe08e5e48995aeb6e0a9b288f8f753080d","Erb"
+"333","withUsageWidth","withUsageWidth","3","Exceptions Change","ParserProperties is only place to store the settings
+","1a00f13387d96041698bfd2e5c5f5e39f20fefdf","Erb"
+"334","withUsageWidth","withUsageWidth","3","Exceptions Change","make ParserProperties more compliant to the standard builder pattern
+","98617f68d1fc9e175d19822d33ed3f8785bfac4a","Erb"
+"335","getUsageWidth","getUsageWidth","1","Modifier Change","make ParserProperties more compliant to the standard builder pattern
+","98617f68d1fc9e175d19822d33ed3f8785bfac4a","Erb"
+"336","withOptionSorter","withOptionSorter","2","Body Change, Introduced, MultiChange","Fixing the inconsistency in naming methods
+","c055070b63d16072adb92536bf3d2814d29e453a","Kohsuke Kawaguchi"
+"337","withOptionSorter","withOptionSorter","2","Body Change","Merge pull request #78 from sfuhrm/naming-consistency
+
+Naming consistency","0564bb3a7e583cb7ac00c37abab38acc06766f8e","Kohsuke Kawaguchi"
+"338","getOptionSorter","getOptionSorter","2","Body Change, Introduced, MultiChange","Fixing the inconsistency in naming methods
+","c055070b63d16072adb92536bf3d2814d29e453a","Kohsuke Kawaguchi"
+"339","getOptionSorter","getOptionSorter","2","Body Change","Merge pull request #78 from sfuhrm/naming-consistency
+
+Naming consistency","0564bb3a7e583cb7ac00c37abab38acc06766f8e","Kohsuke Kawaguchi"
+"340","withOptionValueDelimiter","withOptionValueDelimiter","1","Body Change, Introduced, MultiChange","Generalizing this by allowing arbitrary string
+","58ed80598033b0e4e89fbd19b8d33ea3c291910c","Kohsuke Kawaguchi"
+"341","getOptionValueDelimiter","getOptionValueDelimiter","2","File Renamed","defaults for CmdLineParser in only one place (ParserProperties)
+","8ba724fe08e5e48995aeb6e0a9b288f8f753080d","Erb"
+"342","getOptionValueDelimiter","getOptionValueDelimiter","2","Body Change, Introduced, MultiChange","Generalizing this by allowing arbitrary string
+","58ed80598033b0e4e89fbd19b8d33ea3c291910c","Kohsuke Kawaguchi"
+"343","compare","compare","1","Body Change, Introduced, MultiChange","More generic to allow Comparator, not just a boolean
+","94eb6d9043f545f85c943529f76c1835598c8fda","Kohsuke Kawaguchi"
+"344","registerHandler","registerHandler","3","Exceptions Change","Fixing the coding style to the Sun coding convention
+","0b2928ccb071560b852cfd164dc384cc7a248784","Kohsuke Kawaguchi"
+"345","registerHandler","registerHandler","3","Exceptions Change","Merge pull request #110 from englishman/check-not-null-usage-fix
+
+use Utilities.chechNotNull anywhere","0ccd40b236bf9054670458d8c216705fcdbf912d","Kohsuke Kawaguchi"
+"346","registerHandler","registerHandler","3","Exceptions Change","Merge pull request #122 from olivergondza/option-handler-factory
+
+Introduce a way to inject dependencies to OptionHandler or to value it creates","f9a111414037a66c768941c6a43597e423f5bc81","Kohsuke Kawaguchi"
+"347","registerHandler","registerHandler","1","Body Change, Exceptions Change, Introduced, MultiChange","Merge pull request #122 from olivergondza/option-handler-factory
+
+Introduce a way to inject dependencies to OptionHandler or to value it creates","f9a111414037a66c768941c6a43597e423f5bc81","Kohsuke Kawaguchi"
+"348","createOptionHandler","createOptionHandler","2","Body Change","Merge pull request #110 from englishman/check-not-null-usage-fix
+
+use Utilities.chechNotNull anywhere","0ccd40b236bf9054670458d8c216705fcdbf912d","Kohsuke Kawaguchi"
+"349","createOptionHandler","createOptionHandler","2","Body Change","Merge pull request #122 from olivergondza/option-handler-factory
+
+Introduce a way to inject dependencies to OptionHandler or to value it creates","f9a111414037a66c768941c6a43597e423f5bc81","Kohsuke Kawaguchi"
+"350","getHandler","getHandler","1","Introduced","Merge pull request #122 from olivergondza/option-handler-factory
+
+Introduce a way to inject dependencies to OptionHandler or to value it creates","f9a111414037a66c768941c6a43597e423f5bc81","Kohsuke Kawaguchi"
+"351","DefaultConstructorHandlerFactory","DefaultConstructorHandlerFactory","2","File Renamed","Fixing the coding style to the Sun coding convention
+","0b2928ccb071560b852cfd164dc384cc7a248784","Kohsuke Kawaguchi"
+"352","DefaultConstructorHandlerFactory","DefaultConstructorHandlerFactory","2","Body Change, Introduced, MultiChange","Merge pull request #122 from olivergondza/option-handler-factory
+
+Introduce a way to inject dependencies to OptionHandler or to value it creates","f9a111414037a66c768941c6a43597e423f5bc81","Kohsuke Kawaguchi"
+"353","getHandler","getHandler","1","Introduced","Merge pull request #122 from olivergondza/option-handler-factory
+
+Introduce a way to inject dependencies to OptionHandler or to value it creates","f9a111414037a66c768941c6a43597e423f5bc81","Kohsuke Kawaguchi"
+"354","OptionDef","OptionDef","2","Body Change","Merge branch 'pull-20'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","55df1bd74c0da327737c26816e49c20667ba531a","Kohsuke Kawaguchi"
+"355","OptionDef","OptionDef","2","Body Change","Merge pull request #60 from sfuhrm/help-options
+
+Help parameter introduction like seen in JCommander","668ace8644d0d34f4e97d78fdbe154b25317ddea","Kohsuke Kawaguchi"
+"356","OptionDef","OptionDef","1","Body Change, Introduced, MultiChange","Merge pull request #60 from sfuhrm/help-options
+
+Help parameter introduction like seen in JCommander","668ace8644d0d34f4e97d78fdbe154b25317ddea","Kohsuke Kawaguchi"
+"357","help","help","2","File Renamed","I believe this is just a mistake introduced by the IDE when he added this new class. I'm removing this to have this file use the same LICENSE.txt that this project as a whole uses.
+I'm adding Mark Sinke to the To list so that he can confirm.
+","da2aaed5ff800444c1a0c1714ec893f62dbf0fa4","kohsuke"
+"358","help","help","2","Body Change, Introduced, MultiChange","Merge pull request #60 from sfuhrm/help-options
+
+Help parameter introduction like seen in JCommander","668ace8644d0d34f4e97d78fdbe154b25317ddea","Kohsuke Kawaguchi"
+"359","hidden","hidden","1","Body Change, Introduced, MultiChange","Merge branch 'pull-20'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","55df1bd74c0da327737c26816e49c20667ba531a","Kohsuke Kawaguchi"
+"360","CmdLineException","CmdLineException","2","Body Change","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"361","CmdLineException","CmdLineException","2","Body Change","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"362","CmdLineException","CmdLineException","2","Body Change","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"363","CmdLineException","CmdLineException","2","Body Change","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"364","CmdLineException","CmdLineException","2","Body Change","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"365","CmdLineException","CmdLineException","2","Body Change","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"366","CmdLineException","CmdLineException","1","Body Change, Introduced, MultiChange","I think this name better reflect what it does
+","994b1728b33f49d00c430950258318a577fc2be0","Kohsuke Kawaguchi"
+"367","CmdLineException","CmdLineException","3","Body Change, Introduced, MultiChange","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"368","CmdLineException","CmdLineException","3","Body Change","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"369","CmdLineException","CmdLineException","3","Body Change","I think this name better reflect what it does
+","994b1728b33f49d00c430950258318a577fc2be0","Kohsuke Kawaguchi"
+"370","CmdLineException","CmdLineException","1","Body Change, Introduced, MultiChange","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"371","CmdLineException","CmdLineException","1","Body Change, Introduced, MultiChange","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"372","getLocalizedMessage","getLocalizedMessage","1","Body Change, Introduced, MultiChange","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"373","getParser","getParser","2","Body Change, Exceptions Change, Introduced, MultiChange","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"374","getParser","getParser","2","Exceptions Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"375","DoubleOptionHandler","DoubleOptionHandler","1","Body Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"376","parse","parse","1","Body Change, Exceptions Change, Introduced, MultiChange","Refactoring
+","f441ae243f0251f1e171941ad7b2efd239024486","jhm"
+"377","parseArguments","parseArguments","4","Exceptions Change","applied a fix suggested by Erb Cooper <ecooper@liquidnet.com>
+","60d76837de6ebc1ce46ae23a64fdd46ab6426281","kohsuke"
+"378","parseArguments","parseArguments","4","Exceptions Change","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"379","parseArguments","parseArguments","4","Exceptions Change","fixed a bug in the error message generation
+","9331ddf894b396e8f7bfefc38a87d5074cbb4260","kohsuke"
+"380","parseArguments","parseArguments","4","Exceptions Change","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"381","aliases","aliases","1","Body Change","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"382","help","help","2","File Renamed","Merge branch 'pull-20'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","55df1bd74c0da327737c26816e49c20667ba531a","Kohsuke Kawaguchi"
+"383","help","help","2","Body Change, Introduced, MultiChange","Merge pull request #60 from sfuhrm/help-options
+
+Help parameter introduction like seen in JCommander","668ace8644d0d34f4e97d78fdbe154b25317ddea","Kohsuke Kawaguchi"
+"384","hidden","hidden","1","Body Change","Merge branch 'pull-20'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","55df1bd74c0da327737c26816e49c20667ba531a","Kohsuke Kawaguchi"
+"385","MethodSetter","MethodSetter","1","Body Change, Introduced, MultiChange","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"386","getType","getType","1","Body Change, Introduced, MultiChange","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"387","isMultiValued","isMultiValued","2","File Renamed","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"388","isMultiValued","isMultiValued","2","Introduced","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"389","asFieldSetter","asFieldSetter","1","Body Change, Introduced, MultiChange","Added Setter.asFieldSetter()
+
+In light of issue #16, I'm allowing OptionHandler to access the underlying FieldSetter.
+","1370c9e890d9f5dd7e7647eb1055fed14f40318e","Kohsuke Kawaguchi"
+"390","asAnnotatedElement","asAnnotatedElement","1","Body Change, Introduced, MultiChange","Allow OptionHandlers to access other annotations
+","a1e5a30310a9c39d4bd053cfa3cc915afc876cbe","Kohsuke Kawaguchi"
+"391","addValue","addValue","2","Body Change, Exceptions Change, Introduced, MultiChange","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"392","addValue","addValue","2","Body Change, Exceptions Change, MultiChange","Merge pull request #53 from ebourg/java8-warnings
+
+Rename the identifiers '_' to avoid a compiler warning with Java 8","6a3d21605fa20aa7b0615a7f9244fdb843ed6dc2","Kohsuke Kawaguchi"
+"393","IntOptionHandler","IntOptionHandler","1","Body Change, Introduced, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"394","parse","parse","1","Body Change, Exceptions Change, Introduced, MultiChange","Refactoring
+","f441ae243f0251f1e171941ad7b2efd239024486","jhm"
+"395","getDefaultMetaVariable","getDefaultMetaVariable","1","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"396","parse","parse","4","Exceptions Change","Make Apache Gump happy with non UTF-8 characters.
+","91a37efb11da61f02cc02fdf6d128cd08f301c9f","jhm"
+"397","parse","parse","4","Body Change, Exceptions Change, MultiChange","applied a fix suggested by Erb Cooper <ecooper@liquidnet.com>
+","60d76837de6ebc1ce46ae23a64fdd46ab6426281","kohsuke"
+"398","parse","parse","4","Body Change, Exceptions Change, MultiChange","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"399","parse","parse","4","Exceptions Change","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"400","getDefaultMetaVariable","getDefaultMetaVariable","1","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"401","print","print","1","Body Change, Introduced, MultiChange","Merge pull request #102
+","07c72a2f99dd4b3eccd1395f91313c81cb314cc6","Kohsuke Kawaguchi"
+"402","trySetDefault","trySetDefault","1","Body Change, Exceptions Change, Introduced, MultiChange","Merge remote-tracking branch 'origin/master'
+","eaf7bdead14858ebb6b5b6a779fa120bdcf7a550","Kohsuke Kawaguchi"
+"403","doSetDefault","doSetDefault","2","File Renamed","Allow OptionHandlers to access other annotations
+","a1e5a30310a9c39d4bd053cfa3cc915afc876cbe","Kohsuke Kawaguchi"
+"404","doSetDefault","doSetDefault","2","Body Change, Exceptions Change, Introduced, MultiChange","Merge remote-tracking branch 'origin/master'
+","eaf7bdead14858ebb6b5b6a779fa120bdcf7a550","Kohsuke Kawaguchi"
+"405","asAnnotatedElement","asAnnotatedElement","1","Body Change","Allow OptionHandlers to access other annotations
+","a1e5a30310a9c39d4bd053cfa3cc915afc876cbe","Kohsuke Kawaguchi"
+"406","doAddValue","doAddValue","4","Exceptions Change","Allow OptionHandlers to access other annotations
+","a1e5a30310a9c39d4bd053cfa3cc915afc876cbe","Kohsuke Kawaguchi"
+"407","doAddValue","doAddValue","4","Body Change, Exceptions Change, MultiChange","Fix ARGS4J-25 - support args like ""-coll val1 val2 -coll val3"" with `@Option(handler = StringArrayOptionHandler.class, …)`
+
+Fix `java.lang.IllegalArgumentException: array element type mismatch`
+","06b413b01cafe2dcbedfb82ac9e75a969a8c5ebe","Cyrille Le Clerc"
+"408","doAddValue","doAddValue","4","Body Change, Exceptions Change, MultiChange","Revisted ARGS4J-25 patch.
+
+StringArrayOptionHandler shouldn't batch up tokens into a single array and use Setter<String[]>.
+The Setter abstraction is designed to work with individual items, in this case String.
+See RestOfArgumentsHandler as an example.
+
+With this change, the modification in ArrayFieldSetter made in the previous commit becomes unnecessary.
+","e462e1b9011edce9987163275bdc4b35aec5fd20","Kohsuke Kawaguchi"
+"409","doAddValue","doAddValue","4","Body Change, Exceptions Change, MultiChange","Merge remote-tracking branch 'origin/master'
+","eaf7bdead14858ebb6b5b6a779fa120bdcf7a550","Kohsuke Kawaguchi"
+"410","getValueList","getValueList","2","File Renamed","Allow OptionHandlers to access other annotations
+","a1e5a30310a9c39d4bd053cfa3cc915afc876cbe","Kohsuke Kawaguchi"
+"411","getValueList","getValueList","2","Body Change, Introduced, MultiChange","Merge pull request #102
+","07c72a2f99dd4b3eccd1395f91313c81cb314cc6","Kohsuke Kawaguchi"
+"412","getDefaultMetaVariable","getDefaultMetaVariable","1","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"413","addValue","addValue","1","Body Change","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"414","getType","getType","1","-","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"415","isMultiValued","isMultiValued","2","Introduced","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"416","isMultiValued","isMultiValued","2","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"417","asFieldSetter","asFieldSetter","2","Body Change, Introduced, MultiChange","Added Setter.asFieldSetter()
+
+In light of issue #16, I'm allowing OptionHandler to access the underlying FieldSetter.
+","1370c9e890d9f5dd7e7647eb1055fed14f40318e","Kohsuke Kawaguchi"
+"418","asFieldSetter","asFieldSetter","2","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"419","asAnnotatedElement","asAnnotatedElement","1","Body Change, Introduced, MultiChange","Allow OptionHandlers to access other annotations
+","a1e5a30310a9c39d4bd053cfa3cc915afc876cbe","Kohsuke Kawaguchi"
+"420","StopOptionHandler","StopOptionHandler","1","Body Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"421","parseArguments","parseArguments","2","Body Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"422","parseArguments","parseArguments","2","Modifier Change","Submitted by:  Mark Sinke
+Just a small commit to add more @Override tags (keeping my Eclipse IDE happier)
+","38e6d2925ee56762c8ec6ce3ef6c67e28ec63573","marksinke"
+"423","getDefaultMetaVariable","getDefaultMetaVariable","2","Modifier Change","Submitted by:  Mark Sinke
+Just a small commit to add more @Override tags (keeping my Eclipse IDE happier)
+","38e6d2925ee56762c8ec6ce3ef6c67e28ec63573","marksinke"
+"424","getDefaultMetaVariable","getDefaultMetaVariable","2","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"425","FieldSetter","FieldSetter","1","Body Change","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"426","getType","getType","1","Body Change","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"427","isMultiValued","isMultiValued","2","Body Change","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"428","isMultiValued","isMultiValued","2","Body Change","It doesn't make sense for @Option to have multi-value setting.
+
+This is because whether a setter can handle multiple invocations
+well (by retaining all the values) or not (usually by having the last
+invocation overwrites all the previous values) are determined
+by Setter and setter alone, so asking the user to configure that makes
+no sense.
+
+MultivaluedTest indicates that the author of this part of the code seems
+to have been thinking about concatanating values or something like that,
+but if someone wants that kind of unusual parsing, he should be writing
+OptionHandler.
+","e883b9395b866ed9bd297bee534a04a8bbe83a37","Kohsuke Kawaguchi"
+"429","asFieldSetter","asFieldSetter","2","File Renamed","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"430","asFieldSetter","asFieldSetter","2","Body Change, Introduced, MultiChange","Added Setter.asFieldSetter()
+
+In light of issue #16, I'm allowing OptionHandler to access the underlying FieldSetter.
+","1370c9e890d9f5dd7e7647eb1055fed14f40318e","Kohsuke Kawaguchi"
+"431","asAnnotatedElement","asAnnotatedElement","2","File Renamed","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"432","asAnnotatedElement","asAnnotatedElement","2","Body Change, Introduced, MultiChange","Allow OptionHandlers to access other annotations
+","a1e5a30310a9c39d4bd053cfa3cc915afc876cbe","Kohsuke Kawaguchi"
+"433","addValue","addValue","1","Body Change","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"434","getValue","getValue","2","File Renamed","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"435","getValue","getValue","2","Body Change, Introduced, MultiChange","Added Setter.asFieldSetter()
+
+In light of issue #16, I'm allowing OptionHandler to access the underlying FieldSetter.
+","1370c9e890d9f5dd7e7647eb1055fed14f40318e","Kohsuke Kawaguchi"
+"436","getValueList","getValueList","2","File Renamed","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"437","getValueList","getValueList","2","Body Change, Introduced, MultiChange","Merge pull request #102
+","07c72a2f99dd4b3eccd1395f91313c81cb314cc6","Kohsuke Kawaguchi"
+"438","asList","asList","2","File Renamed","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"439","asList","asList","2","Body Change, Introduced, MultiChange","Merge pull request #102
+","07c72a2f99dd4b3eccd1395f91313c81cb314cc6","Kohsuke Kawaguchi"
+"440","OptionHandler","OptionHandler","1","Body Change, Introduced, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"441","parseArguments","parseArguments","2","-","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"442","parseArguments","parseArguments","2","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"443","getDefaultMetaVariable","getDefaultMetaVariable","3","Introduced","implemented metavariable support.
+","a5f06b369490d93f37c354f03f0982d42bf39718","kohsuke"
+"444","getDefaultMetaVariable","getDefaultMetaVariable","3","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"445","getDefaultMetaVariable","getDefaultMetaVariable","3","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"446","getMetaVariable","getMetaVariable","3","File Renamed","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"447","getMetaVariable","getMetaVariable","3","Body Change, Introduced, MultiChange","implemented metavariable support.
+","a5f06b369490d93f37c354f03f0982d42bf39718","kohsuke"
+"448","getMetaVariable","getMetaVariable","3","Modifier Change","Merge branch 'master' of github.com:kohsuke/args4j
+","bdf477741713a43e83489a112812715161f65671","Kohsuke Kawaguchi"
+"449","getNameAndMeta","getNameAndMeta","3","Body Change, Introduced, MultiChange","Obtained from: Igor Lankin
+Submitted by:  Igor Lankin
+Reviewed by:   Mark Sinke
+
+Add aliases to option names.
+","27cab037bba3ed35fa43f07bc95b25a69fbec779","marksinke"
+"450","getNameAndMeta","getNameAndMeta","3","Body Change","Merge pull request #73
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","da7de2b8b1be12fb646997b97d2deec63eaa4c0b","Kohsuke Kawaguchi"
+"451","getNameAndMeta","getNameAndMeta","3","Body Change","Moving the setting to ParserProperties
+","03e32ef3083b23760d543dc6aab117df3909ded8","Kohsuke Kawaguchi"
+"452","getNameAndMeta","getNameAndMeta","2","Body Change, Introduced, MultiChange","Moving the setting to ParserProperties
+","03e32ef3083b23760d543dc6aab117df3909ded8","Kohsuke Kawaguchi"
+"453","getNameAndMeta","getNameAndMeta","2","Body Change","Generalizing this by allowing arbitrary string
+","58ed80598033b0e4e89fbd19b8d33ea3c291910c","Kohsuke Kawaguchi"
+"454","print","print","1","Body Change, Introduced, MultiChange","Merge pull request #102
+","07c72a2f99dd4b3eccd1395f91313c81cb314cc6","Kohsuke Kawaguchi"
+"455","printDefaultValue","printDefaultValue","1","Body Change, Introduced, MultiChange","Merge pull request #102
+","07c72a2f99dd4b3eccd1395f91313c81cb314cc6","Kohsuke Kawaguchi"
+"456","parseArguments","parseArguments","3","Exceptions Change","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"457","parseArguments","parseArguments","3","Exceptions Change","fixed a bug in the error message generation
+","9331ddf894b396e8f7bfefc38a87d5074cbb4260","kohsuke"
+"458","parseArguments","parseArguments","3","Exceptions Change","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"459","getDefaultMetaVariable","getDefaultMetaVariable","1","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"460","MultiValueFieldSetter","MultiValueFieldSetter","1","Body Change","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"461","isMultiValued","isMultiValued","1","Body Change","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"462","asFieldSetter","asFieldSetter","2","File Renamed","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"463","asFieldSetter","asFieldSetter","2","Body Change, Introduced, MultiChange","Added Setter.asFieldSetter()
+
+In light of issue #16, I'm allowing OptionHandler to access the underlying FieldSetter.
+","1370c9e890d9f5dd7e7647eb1055fed14f40318e","Kohsuke Kawaguchi"
+"464","asAnnotatedElement","asAnnotatedElement","2","File Renamed","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"465","asAnnotatedElement","asAnnotatedElement","2","Body Change, Introduced, MultiChange","Allow OptionHandlers to access other annotations
+","a1e5a30310a9c39d4bd053cfa3cc915afc876cbe","Kohsuke Kawaguchi"
+"466","getType","getType","1","Body Change","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"467","addValue","addValue","1","Body Change","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"468","doAddValue","doAddValue","2","Body Change, Exceptions Change, MultiChange","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"469","doAddValue","doAddValue","2","Exceptions Change","More I18N
+","c8c81c5f04853f2495dc911d984aac7d30d68067","jhm"
+"470","getValueList","getValueList","2","File Renamed","- The point of exposing CmdLineParser.addOption and addArgument is to open up metadata parsing to the caller. So in that spirit, there's no need for CmdLineParser to sniff the incoming bean for how to read metadata. It's best to leave that to the caller.
+- MetadataParser was concurrent unsafe, as the clone doesn't clone parsers themselves.
+- Moved Setter to SPI, since it's irrelevant for casual users.
+","15aa33b42db7398fec119fa52ce2d749c162cad3","kohsuke"
+"471","getValueList","getValueList","2","Body Change, Introduced, MultiChange","Merge pull request #102
+","07c72a2f99dd4b3eccd1395f91313c81cb314cc6","Kohsuke Kawaguchi"
+"472","printDefaultValue","printDefaultValue","1","Body Change","Merge pull request #102
+","07c72a2f99dd4b3eccd1395f91313c81cb314cc6","Kohsuke Kawaguchi"
+"473","parseArguments","parseArguments","2","Exceptions Change","fixed a bug in the error message generation
+","9331ddf894b396e8f7bfefc38a87d5074cbb4260","kohsuke"
+"474","parseArguments","parseArguments","2","Exceptions Change","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"475","getDefaultMetaVariable","getDefaultMetaVariable","1","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"476","BooleanOptionHandler","BooleanOptionHandler","1","Body Change, Introduced, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"477","parseArguments","parseArguments","5","Exceptions Change","implemented metavariable support.
+","a5f06b369490d93f37c354f03f0982d42bf39718","kohsuke"
+"478","parseArguments","parseArguments","5","Body Change, Exceptions Change, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"479","parseArguments","parseArguments","5","Modifier Change","Submitted by:  Mark Sinke
+Just a small commit to add more @Override tags (keeping my Eclipse IDE happier)
+","38e6d2925ee56762c8ec6ce3ef6c67e28ec63573","marksinke"
+"480","parseArguments","parseArguments","5","Exceptions Change","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"481","parseArguments","parseArguments","5","Exceptions Change","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"482","getDefaultMetaVariable","getDefaultMetaVariable","2","Body Change","implemented metavariable support.
+","a5f06b369490d93f37c354f03f0982d42bf39718","kohsuke"
+"483","getDefaultMetaVariable","getDefaultMetaVariable","2","Modifier Change","Submitted by:  Mark Sinke
+Just a small commit to add more @Override tags (keeping my Eclipse IDE happier)
+","38e6d2925ee56762c8ec6ce3ef6c67e28ec63573","marksinke"
+"484","Setters","Setters","1","Body Change, Introduced, MultiChange","Merge pull request #69 from sfuhrm/code-cleanups-2
+
+Code cleanups 2","9d8c90bd0edcf4be12d380555087a7703be6416b","Kohsuke Kawaguchi"
+"485","create","create","2","Body Change","Fixed the way MapOptionHandler works
+
+The problem with MapSetter is that it has too much logic in it. Setters are not meant to be doing too much --- it's merely there to abstract away the difference between fields and methods. Anything that involves parsing should be OptionHandler.
+
+The reason MapOptionHandler wasn't done cleanly is because setting a Map requires a get access of the field value. So we should expose this from FieldSetter.
+","7960ba1b5a4b30bfc1ab430baf765d80174afdbe","Kohsuke Kawaguchi"
+"486","create","create","2","Body Change","Merge pull request #86
+","72efd9f01389fbf9b4ef34fa86600b68991d8252","Kohsuke Kawaguchi"
+"487","getDefaultMetaVariable","getDefaultMetaVariable","1","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"488","fallback","fallback","2","Exceptions Change","Merge pull request #31 from maginatics/subcommand-impl-annotation
+
+Add missing impl annotation name to Javadoc","243b926b1831a1fd4af94229484a62e0f478d3ff","Kohsuke Kawaguchi"
+"489","fallback","fallback","2","Body Change, Exceptions Change, MultiChange","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"490","configureParser","configureParser","1","Body Change","Merge pull request #184 from gagarski/subcommand_properties
+
+Use properties from owner parser in SubCommandHandler","b819bd367a70fe102f7a7cab628c2e9f080705fe","Kohsuke Kawaguchi"
+"491","getDefaultMetaVariable","getDefaultMetaVariable","2","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"492","getDefaultMetaVariable","getDefaultMetaVariable","2","Body Change","Merge branch 'master' of github.com:kohsuke/args4j
+","bdf477741713a43e83489a112812715161f65671","Kohsuke Kawaguchi"
+"493","getMetaVariable","getMetaVariable","1","Body Change, Introduced, MultiChange","Merge branch 'master' of github.com:kohsuke/args4j
+","bdf477741713a43e83489a112812715161f65671","Kohsuke Kawaguchi"
+"494","StringOptionHandler","StringOptionHandler","1","Body Change, Introduced, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"495","parseArguments","parseArguments","1","Modifier Change","Submitted by:  Mark Sinke
+Just a small commit to add more @Override tags (keeping my Eclipse IDE happier)
+","38e6d2925ee56762c8ec6ce3ef6c67e28ec63573","marksinke"
+"496","getDefaultMetaVariable","getDefaultMetaVariable","3","Body Change","implemented metavariable support.
+","a5f06b369490d93f37c354f03f0982d42bf39718","kohsuke"
+"497","getDefaultMetaVariable","getDefaultMetaVariable","3","Modifier Change","Submitted by:  Mark Sinke
+Just a small commit to add more @Override tags (keeping my Eclipse IDE happier)
+","38e6d2925ee56762c8ec6ce3ef6c67e28ec63573","marksinke"
+"498","getDefaultMetaVariable","getDefaultMetaVariable","3","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"499","StringArrayOptionHandler","StringArrayOptionHandler","1","Body Change, Introduced, MultiChange","Revisted ARGS4J-25 patch.
+
+StringArrayOptionHandler shouldn't batch up tokens into a single array and use Setter<String[]>.
+The Setter abstraction is designed to work with individual items, in this case String.
+See RestOfArgumentsHandler as an example.
+
+With this change, the modification in ArrayFieldSetter made in the previous commit becomes unnecessary.
+","e462e1b9011edce9987163275bdc4b35aec5fd20","Kohsuke Kawaguchi"
+"500","getDefaultMetaVariable","getDefaultMetaVariable","2","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"501","getDefaultMetaVariable","getDefaultMetaVariable","2","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"502","parseArguments","parseArguments","4","Exceptions Change","Improving the doc
+","fc296a01004a23cfb16b78a14630991cc7fcbec3","Kohsuke Kawaguchi"
+"503","parseArguments","parseArguments","4","Body Change, Exceptions Change, MultiChange","fixed up the code. Now I feel a little better.
+","9f297765e50ae09914bf7e1e81c46bbc2b709b12","Kohsuke Kawaguchi"
+"504","parseArguments","parseArguments","4","Body Change, Exceptions Change, MultiChange","Revisted ARGS4J-25 patch.
+
+StringArrayOptionHandler shouldn't batch up tokens into a single array and use Setter<String[]>.
+The Setter abstraction is designed to work with individual items, in this case String.
+See RestOfArgumentsHandler as an example.
+
+With this change, the modification in ArrayFieldSetter made in the previous commit becomes unnecessary.
+","e462e1b9011edce9987163275bdc4b35aec5fd20","Kohsuke Kawaguchi"
+"505","parseArguments","parseArguments","4","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"506","MapOptionHandler","MapOptionHandler","2","Body Change","Fixed the way MapOptionHandler works
+
+The problem with MapSetter is that it has too much logic in it. Setters are not meant to be doing too much --- it's merely there to abstract away the difference between fields and methods. Anything that involves parsing should be OptionHandler.
+
+The reason MapOptionHandler wasn't done cleanly is because setting a Map requires a get access of the field value. So we should expose this from FieldSetter.
+","7960ba1b5a4b30bfc1ab430baf765d80174afdbe","Kohsuke Kawaguchi"
+"507","MapOptionHandler","MapOptionHandler","2","Body Change","Added Setter.asFieldSetter()
+
+In light of issue #16, I'm allowing OptionHandler to access the underlying FieldSetter.
+","1370c9e890d9f5dd7e7647eb1055fed14f40318e","Kohsuke Kawaguchi"
+"508","parseArguments","parseArguments","3","Exceptions Change","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"509","parseArguments","parseArguments","3","Body Change, Exceptions Change, MultiChange","Fixed the way MapOptionHandler works
+
+The problem with MapSetter is that it has too much logic in it. Setters are not meant to be doing too much --- it's merely there to abstract away the difference between fields and methods. Anything that involves parsing should be OptionHandler.
+
+The reason MapOptionHandler wasn't done cleanly is because setting a Map requires a get access of the field value. So we should expose this from FieldSetter.
+","7960ba1b5a4b30bfc1ab430baf765d80174afdbe","Kohsuke Kawaguchi"
+"510","parseArguments","parseArguments","3","Body Change, Exceptions Change, MultiChange","Added Setter.asFieldSetter()
+
+In light of issue #16, I'm allowing OptionHandler to access the underlying FieldSetter.
+","1370c9e890d9f5dd7e7647eb1055fed14f40318e","Kohsuke Kawaguchi"
+"511","createNewCollection","createNewCollection","1","Body Change, Introduced, MultiChange","Fixed the way MapOptionHandler works
+
+The problem with MapSetter is that it has too much logic in it. Setters are not meant to be doing too much --- it's merely there to abstract away the difference between fields and methods. Anything that involves parsing should be OptionHandler.
+
+The reason MapOptionHandler wasn't done cleanly is because setting a Map requires a get access of the field value. So we should expose this from FieldSetter.
+","7960ba1b5a4b30bfc1ab430baf765d80174afdbe","Kohsuke Kawaguchi"
+"512","addToMap","addToMap","2","Body Change, Exceptions Change, Introduced, MultiChange","Fixed the way MapOptionHandler works
+
+The problem with MapSetter is that it has too much logic in it. Setters are not meant to be doing too much --- it's merely there to abstract away the difference between fields and methods. Anything that involves parsing should be OptionHandler.
+
+The reason MapOptionHandler wasn't done cleanly is because setting a Map requires a get access of the field value. So we should expose this from FieldSetter.
+","7960ba1b5a4b30bfc1ab430baf765d80174afdbe","Kohsuke Kawaguchi"
+"513","addToMap","addToMap","2","Body Change, Exceptions Change, MultiChange","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"514","addToMap","addToMap","1","Body Change, Introduced, MultiChange","Fixed the way MapOptionHandler works
+
+The problem with MapSetter is that it has too much logic in it. Setters are not meant to be doing too much --- it's merely there to abstract away the difference between fields and methods. Anything that involves parsing should be OptionHandler.
+
+The reason MapOptionHandler wasn't done cleanly is because setting a Map requires a get access of the field value. So we should expose this from FieldSetter.
+","7960ba1b5a4b30bfc1ab430baf765d80174afdbe","Kohsuke Kawaguchi"
+"515","getParameter","getParameter","5","Body Change, Exceptions Change, MultiChange","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"516","getParameter","getParameter","5","Modifier Change, Exceptions Change, MultiChange","Refactoring on CmdLineParser for more commonality between options and arguments
+","b94fb5cd7bc9c2701dc19b761548628f53e4b0af","marksinke"
+"517","getParameter","getParameter","5","Modifier Change, Exceptions Change, MultiChange","added a method to return the # of remaining tokens.
+","ccc09f4b428ccc76091df0447192cb5bfa91f8c3","kohsuke"
+"518","getParameter","getParameter","5","Body Change","Merge pull request #29 from Zearin/docs
+
+Numerous minor edits to documentation","e08af41930d5538c586c29680047ab4521f9a2bc","Kohsuke Kawaguchi"
+"519","getParameter","getParameter","5","Body Change","Merge pull request #81 from sfuhrm/JavaDocFix
+
+Java doc fixes","063d2734c4086b459aea136511b2a4cebe02bee4","Kohsuke Kawaguchi"
+"520","size","size","1","Introduced","added a method to return the # of remaining tokens.
+","ccc09f4b428ccc76091df0447192cb5bfa91f8c3","kohsuke"
+"521","FileOptionHandler","FileOptionHandler","1","Body Change, Introduced, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"522","parse","parse","1","Body Change, Exceptions Change, Introduced, MultiChange","Merge tag 'pull-23'
+","d6025c22ae273d3d5ed2c3473b58d74e4af05069","Kohsuke Kawaguchi"
+"523","getDefaultMetaVariable","getDefaultMetaVariable","2","Modifier Change","Submitted by:  Mark Sinke
+Just a small commit to add more @Override tags (keeping my Eclipse IDE happier)
+","38e6d2925ee56762c8ec6ce3ef6c67e28ec63573","marksinke"
+"524","getDefaultMetaVariable","getDefaultMetaVariable","2","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"525","getDefaultMetaVariable","getDefaultMetaVariable","1","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"526","getDefaultMetaVariable","getDefaultMetaVariable","1","Body Change","Merge pull request #68 from sfuhrm/more-locale-fixes
+
+More locale fixes","8820cf7125105570ea9dd6ba0ff3b98ddd737607","Kohsuke Kawaguchi"
+"527","EnumOptionHandler","EnumOptionHandler","1","Body Change, Introduced, MultiChange","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"528","parseArguments","parseArguments","11","Body Change, Exceptions Change, MultiChange","implemented args4j 2.0.
+","b5339c5a775f89567de53683bbbde3fb187ad5c5","kohsuke"
+"529","parseArguments","parseArguments","11","Body Change, Exceptions Change, MultiChange","implemented a case-insensitive search.
+","a9068b2d4fc2384d1bc086c4ffbd4d561fc9b686","kohsuke"
+"530","parseArguments","parseArguments","11","Body Change, Exceptions Change, MultiChange","generified OptionHandler by following malachi's suggestion.
+","583f6579aee63f349432bc8eb1f9003c89cddca2","kohsuke"
+"531","parseArguments","parseArguments","11","Exceptions Change","Submitted by:  Mark Sinke
+Reviewed by:   Kohsuke Kawaguchi
+
+Add argument handling to args4j. See ArgumentTest for a simple example. Look at @Argument for more options.
+","c69aadfcfcd47b29ba8be3328ccd2dbd414d6e65","marksinke"
+"532","parseArguments","parseArguments","11","Modifier Change","Submitted by:  Mark Sinke
+Just a small commit to add more @Override tags (keeping my Eclipse IDE happier)
+","38e6d2925ee56762c8ec6ce3ef6c67e28ec63573","marksinke"
+"533","parseArguments","parseArguments","11","Exceptions Change","Obtained from: Igor Lankin
+Submitted by:  Igor Lankin
+Reviewed by:   Mark Sinke
+
+Add aliases to option names.
+","27cab037bba3ed35fa43f07bc95b25a69fbec779","marksinke"
+"534","parseArguments","parseArguments","11","Exceptions Change","applied a patch from Daniel <daniel.j.larsson@gmail.com>
+----
+Hi,
+Attached is a fairly small patch to include the parser instance in the
+thrown CmdLineException. I'm using args4j for parsing subcommands, each with
+it's own set of options, and thus used multiple parsers. It made sense to
+have a global try...catch block, but then I had trouble calling the right
+parser.printUsage() method. This is solved by including the parser in the
+thrown exception:
+try {
+    ...
+} catch (CmdLineException e) {
+    ...
+    e.getParser().printUsage(System.err);
+}
+Hope you'd consider this patch for the next release.
+","a9084b8c6e387690bdeb9153145c0948170e27f5","kohsuke"
+"535","parseArguments","parseArguments","11","Exceptions Change","fixed a bug in the error message generation
+","9331ddf894b396e8f7bfefc38a87d5074cbb4260","kohsuke"
+"536","parseArguments","parseArguments","11","Body Change, Exceptions Change, MultiChange","enable the EnumOptionHandler to handle illegal arguments.
+","b57c1295af888400c43667073070f6f2e35959f8","eller86"
+"537","parseArguments","parseArguments","11","Body Change, Exceptions Change, MultiChange","Merge pull request #9 from grossws/master
+
+Adding support for '-' in enums.","5f220fb00cccdbf997f2d5d2d9d38813f9defcec","Kohsuke Kawaguchi"
+"538","parseArguments","parseArguments","11","Exceptions Change","Merge pull request #62
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+	args4j/src/org/kohsuke/args4j/spi/Messages.properties
+	args4j/test/ExampleTest.java
+","35987782d2c9a94c9b0f76648b3c71d7d34e528f","Kohsuke Kawaguchi"
+"539","getDefaultMetaVariable","getDefaultMetaVariable","3","Body Change, Introduced, MultiChange","implemented metavariable support.
+","a5f06b369490d93f37c354f03f0982d42bf39718","kohsuke"
+"540","getDefaultMetaVariable","getDefaultMetaVariable","3","Modifier Change","Submitted by:  Mark Sinke
+Just a small commit to add more @Override tags (keeping my Eclipse IDE happier)
+","38e6d2925ee56762c8ec6ce3ef6c67e28ec63573","marksinke"
+"541","getDefaultMetaVariable","getDefaultMetaVariable","3","Body Change","Bug 4: Better readability of Java5 enums usage
+","7e3d60f4b984d5bfdf5ac2b08833e9080fab7233","jhm"
+"542","getMetaVariable","getMetaVariable","1","Body Change, Introduced, MultiChange","Merge branch 'master' of github.com:kohsuke/args4j
+","bdf477741713a43e83489a112812715161f65671","Kohsuke Kawaguchi"
+"543","OptionImpl","OptionImpl","1","Body Change","TAB->WS
+","df010e3fb956910ecfce9bb0ff238a03ab1efba9","Kohsuke Kawaguchi"
+"544","depends","depends","2","Body Change","Merge branch 'pull-14'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/Messages.java
+	args4j/src/org/kohsuke/args4j/Messages.properties
+	args4j/src/org/kohsuke/args4j/Option.java
+","eb74997416d4e91ff31b4b720f576ab944abfe08","Kohsuke Kawaguchi"
+"545","depends","depends","2","Body Change","TAB->WS
+","df010e3fb956910ecfce9bb0ff238a03ab1efba9","Kohsuke Kawaguchi"
+"546","forbids","forbids","3","File Renamed","Merge branch 'pull-14'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/Messages.java
+	args4j/src/org/kohsuke/args4j/Messages.properties
+	args4j/src/org/kohsuke/args4j/Option.java
+","eb74997416d4e91ff31b4b720f576ab944abfe08","Kohsuke Kawaguchi"
+"547","forbids","forbids","3","Body Change, Introduced, MultiChange","Merge branch 'pull-63'
+
+Conflicts:
+	args4j-maven-plugin/src/main/java/org/kohsuke/args4j/maven/Args4jUsageMojo.java
+","df6ffa4b77ddbc64999448dec3e9d82eb0978269","Kohsuke Kawaguchi"
+"548","forbids","forbids","3","Body Change","Merge pull request #125 from mrkozmic/patch-1
+
+Bugfix: forbids() should return forbids, not depends","b1b2d131c348c3da771046b209c0f39e1204357d","Kohsuke Kawaguchi"
+"549","formatWithLocale","formatWithLocale","1","Body Change","Merge pull request #69 from sfuhrm/code-cleanups-2
+
+Code cleanups 2","9d8c90bd0edcf4be12d380555087a7703be6416b","Kohsuke Kawaguchi"
+"550","format","format","1","Body Change","Merge pull request #69 from sfuhrm/code-cleanups-2
+
+Code cleanups 2","9d8c90bd0edcf4be12d380555087a7703be6416b","Kohsuke Kawaguchi"
+"551","NamedOptionDef","NamedOptionDef","1","Body Change","It doesn't make sense for @Option to have multi-value setting.
+
+This is because whether a setter can handle multiple invocations
+well (by retaining all the values) or not (usually by having the last
+invocation overwrites all the previous values) are determined
+by Setter and setter alone, so asking the user to configure that makes
+no sense.
+
+MultivaluedTest indicates that the author of this part of the code seems
+to have been thinking about concatanating values or something like that,
+but if someone wants that kind of unusual parsing, he should be writing
+OptionHandler.
+","e883b9395b866ed9bd297bee534a04a8bbe83a37","Kohsuke Kawaguchi"
+"552","NamedOptionDef","NamedOptionDef","4","Body Change","It doesn't make sense for @Option to have multi-value setting.
+
+This is because whether a setter can handle multiple invocations
+well (by retaining all the values) or not (usually by having the last
+invocation overwrites all the previous values) are determined
+by Setter and setter alone, so asking the user to configure that makes
+no sense.
+
+MultivaluedTest indicates that the author of this part of the code seems
+to have been thinking about concatanating values or something like that,
+but if someone wants that kind of unusual parsing, he should be writing
+OptionHandler.
+","e883b9395b866ed9bd297bee534a04a8bbe83a37","Kohsuke Kawaguchi"
+"553","NamedOptionDef","NamedOptionDef","4","Body Change","Merge branch 'pull-20'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/CmdLineParser.java
+","55df1bd74c0da327737c26816e49c20667ba531a","Kohsuke Kawaguchi"
+"554","NamedOptionDef","NamedOptionDef","4","Body Change","Merge pull request #60 from sfuhrm/help-options
+
+Help parameter introduction like seen in JCommander","668ace8644d0d34f4e97d78fdbe154b25317ddea","Kohsuke Kawaguchi"
+"555","NamedOptionDef","NamedOptionDef","4","Body Change","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"556","createZeroSizedArrayIfNull","createZeroSizedArrayIfNull","2","File Renamed","It doesn't make sense for @Option to have multi-value setting.
+
+This is because whether a setter can handle multiple invocations
+well (by retaining all the values) or not (usually by having the last
+invocation overwrites all the previous values) are determined
+by Setter and setter alone, so asking the user to configure that makes
+no sense.
+
+MultivaluedTest indicates that the author of this part of the code seems
+to have been thinking about concatanating values or something like that,
+but if someone wants that kind of unusual parsing, he should be writing
+OptionHandler.
+","e883b9395b866ed9bd297bee534a04a8bbe83a37","Kohsuke Kawaguchi"
+"557","createZeroSizedArrayIfNull","createZeroSizedArrayIfNull","2","Body Change, Introduced, MultiChange","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"558","aliases","aliases","1","Body Change","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"559","depends","depends","3","File Renamed","It doesn't make sense for @Option to have multi-value setting.
+
+This is because whether a setter can handle multiple invocations
+well (by retaining all the values) or not (usually by having the last
+invocation overwrites all the previous values) are determined
+by Setter and setter alone, so asking the user to configure that makes
+no sense.
+
+MultivaluedTest indicates that the author of this part of the code seems
+to have been thinking about concatanating values or something like that,
+but if someone wants that kind of unusual parsing, he should be writing
+OptionHandler.
+","e883b9395b866ed9bd297bee534a04a8bbe83a37","Kohsuke Kawaguchi"
+"560","depends","depends","3","Body Change, Introduced, MultiChange","Merge branch 'pull-14'
+
+Conflicts:
+	args4j/src/org/kohsuke/args4j/Messages.java
+	args4j/src/org/kohsuke/args4j/Messages.properties
+	args4j/src/org/kohsuke/args4j/Option.java
+","eb74997416d4e91ff31b4b720f576ab944abfe08","Kohsuke Kawaguchi"
+"561","depends","depends","3","Body Change","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"562","forbids","forbids","3","File Renamed","It doesn't make sense for @Option to have multi-value setting.
+
+This is because whether a setter can handle multiple invocations
+well (by retaining all the values) or not (usually by having the last
+invocation overwrites all the previous values) are determined
+by Setter and setter alone, so asking the user to configure that makes
+no sense.
+
+MultivaluedTest indicates that the author of this part of the code seems
+to have been thinking about concatanating values or something like that,
+but if someone wants that kind of unusual parsing, he should be writing
+OptionHandler.
+","e883b9395b866ed9bd297bee534a04a8bbe83a37","Kohsuke Kawaguchi"
+"563","forbids","forbids","3","Body Change, Introduced, MultiChange","Merge branch 'pull-63'
+
+Conflicts:
+	args4j-maven-plugin/src/main/java/org/kohsuke/args4j/maven/Args4jUsageMojo.java
+","df6ffa4b77ddbc64999448dec3e9d82eb0978269","Kohsuke Kawaguchi"
+"564","forbids","forbids","3","Body Change","Merge pull request #67 from sfuhrm/code-cleanups
+
+Code cleanups","f3ad7da56bcdd851c95c774db9718d1cede2f242","Kohsuke Kawaguchi"
+"565","select","select","1","Body Change","Merge pull request #81 from sfuhrm/JavaDocFix
+
+Java doc fixes","063d2734c4086b459aea136511b2a4cebe02bee4","Kohsuke Kawaguchi"
+"566","select","select","1","Body Change","Merge pull request #81 from sfuhrm/JavaDocFix
+
+Java doc fixes","063d2734c4086b459aea136511b2a4cebe02bee4","Kohsuke Kawaguchi"
+"567","select","select","1","Body Change","Merge pull request #81 from sfuhrm/JavaDocFix
+
+Java doc fixes","063d2734c4086b459aea136511b2a4cebe02bee4","Kohsuke Kawaguchi"
+"568","select","select","1","Body Change","Merge pull request #81 from sfuhrm/JavaDocFix
+
+Java doc fixes","063d2734c4086b459aea136511b2a4cebe02bee4","Kohsuke Kawaguchi"
+"569","parse","parse","1","Body Change","New MetadataParser (FieldParser) which makes all Fields available by their names (Foo.bar -> -bar)
+","ae6f74097376d0afc0604dc0cd914b14931970ac","jhm"

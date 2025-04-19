@@ -1,0 +1,1556 @@
+"Index","Method Name","Method Signature","Commit Count","Change Types","Commit Message","Commit ID","Commit Author"
+"1","selectEnvironments","-","1","","see #47 better reporting oracle results
+","64469af902c84e426716d82b0e5bc07fdf0f7df6","Reid Holmes"
+"2","createDynamicTests","-","1","","see #47 better reporting oracle results
+","64469af902c84e426716d82b0e5bc07fdf0f7df6","Reid Holmes"
+"3","createDynamicTest","-","1","","see #47 better reporting oracle results
+","64469af902c84e426716d82b0e5bc07fdf0f7df6","Reid Holmes"
+"4","doCreateDynamicTest","-","1","Body Change","see #47 better reporting oracle results
+","64469af902c84e426716d82b0e5bc07fdf0f7df6","Reid Holmes"
+"5","performComparison","-","1","","see #47 better reporting oracle results
+","64469af902c84e426716d82b0e5bc07fdf0f7df6","Reid Holmes"
+"6","runEnvironment","-","1","","see #47 better reporting oracle results
+","64469af902c84e426716d82b0e5bc07fdf0f7df6","Reid Holmes"
+"7","compareResults","-","1","Body Change","see #47 better reporting oracle results
+","64469af902c84e426716d82b0e5bc07fdf0f7df6","Reid Holmes"
+"8","main","-","11","Body Change","Fixed heap space issue in mining executions
+","640af9b185af89ea568d3201f9f7a932c457f694","Felix Grund"
+"9","ThresholdRunner","-","7","","see #47 update oracle with Shaiful's version and add missing rows to elasticsearch method.
+","598e5d4be87b04e181b2e37e09bd4d8e57a686c5","Reid Holmes"
+"10","print","-","7","Signature Change, Body Change","see #47 update oracle with Shaiful's version and add missing rows to elasticsearch method.
+","598e5d4be87b04e181b2e37e09bd4d8e57a686c5","Reid Holmes"
+"11","doIt","-","7","Body Change","see #47 update oracle with Shaiful's version and add missing rows to elasticsearch method.
+","598e5d4be87b04e181b2e37e09bd4d8e57a686c5","Reid Holmes"
+"12","evaluateConfig","-","7","Signature Change, Body Change","see #47 update oracle with Shaiful's version and add missing rows to elasticsearch method.
+","598e5d4be87b04e181b2e37e09bd4d8e57a686c5","Reid Holmes"
+"13","run","-","7","Body Change","see #47 update oracle with Shaiful's version and add missing rows to elasticsearch method.
+","598e5d4be87b04e181b2e37e09bd4d8e57a686c5","Reid Holmes"
+"14","main","-","7","","see #47 update oracle with Shaiful's version and add missing rows to elasticsearch method.
+","598e5d4be87b04e181b2e37e09bd4d8e57a686c5","Reid Holmes"
+"15","main","-","0","-","-","-","-"
+"16","execute","-","0","-","-","-","-"
+"17","main","-","1","Body Change","improved stats scripts
+","1bc957bfacade3475cad435809528dbf1aff5e7a","Felix Grund"
+"18","getSubdirectories","-","1","","improved stats scripts
+","1bc957bfacade3475cad435809528dbf1aff5e7a","Felix Grund"
+"19","accept","-","1","","improved stats scripts
+","1bc957bfacade3475cad435809528dbf1aff5e7a","Felix Grund"
+"20","log","-","1","","improved stats scripts
+","1bc957bfacade3475cad435809528dbf1aff5e7a","Felix Grund"
+"21","main","-","3","Body Change","Fixed heap space issue in mining executions
+","640af9b185af89ea568d3201f9f7a932c457f694","Felix Grund"
+"22","execMining","-","4","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"23","FunctionSimilarity","-","5","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"24","computeOverallSimilarity","-","5","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"25","getScopeSimilarity","-","5","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"26","setScopeSimilarity","-","5","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"27","getBodySimilarity","-","5","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"28","getLineNumberSimilarity","-","5","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"29","setBodySimilarity","-","5","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"30","setNameSimilarity","-","5","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"31","getNameSimilarity","-","5","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"32","setLineNumberSimilarity","-","5","Body Change","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"33","getOverallSimilarity","-","5","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"34","toString","-","5","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"35","Commit","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"36","getId","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"37","getCommitTime","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"38","setCommitTime","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"39","setCommitDate","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"40","setAuthorName","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"41","setAuthorEmail","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"42","setCommitMessage","-","4","Body Change","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"43","setName","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"44","getCommitDateAsString","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"45","getAuthorName","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"46","getAuthorEmail","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"47","getCommitMessage","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"48","getName","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"49","getCommitDate","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"50","getCommitNameShort","-","4","","Further bugfixing during empirical analysis. Checkstyle and Flink stubs work now.
+","46ec72105cd8cb1803c14b3bb71576c8e5b5ca35","Felix Grund"
+"51","getEnvOptional","-","13","","finally got meta changes to work fully as it seems
+","96e612d8461035097f815f902f98260fb68e693d","Felix Grund"
+"52","StartEnvironment","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"53","getRepositoryService","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"54","getRepositoryPath","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"55","getRepositoryName","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"56","setRepositoryName","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"57","getRepository","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"58","getGit","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"59","getFilePath","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"60","setFilePath","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"61","getStartCommitName","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"62","setStartCommitName","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"63","getFunctionName","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"64","setFunctionName","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"65","getStartCommit","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"66","setStartCommit","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"67","getFunctionStartLine","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"68","setFunctionStartLine","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"69","getFileName","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"70","getEnvName","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"71","setEnvName","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"72","getExpectedResult","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"73","setExpectedResult","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"74","setFileName","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"75","setBaseline","-","5","Signature Change, Body Change","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"76","getBaseline","-","5","Signature Change, Body Change","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"77","setRepositoryService","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"78","setRepositoryPath","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"79","setOutputFilePath","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"80","getOutputFilePath","-","5","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"81","MethodVisitor","-","0","-","-","-","-"
+"82","methodMatches","-","0","-","-","-","-"
+"83","getMatchedNodes","-","0","-","-","-","-"
+"84","TypeScriptVisitor","-","0","-","-","-","-"
+"85","visit","-","0","-","-","-","-"
+"86","getSource","-","0","-","-","-","-"
+"87","init","-","0","-","-","-","-"
+"88","clear","-","0","-","-","-","-"
+"89","visit","-","0","-","-","-","-"
+"90","isKind","-","0","-","-","-","-"
+"91","visitChildren","-","0","-","-","-","-"
+"92","visitUnknown","-","0","-","-","-","-"
+"93","visitEndOfFileToken","-","0","-","-","-","-"
+"94","visitSingleLineCommentTrivia","-","0","-","-","-","-"
+"95","visitMultiLineCommentTrivia","-","0","-","-","-","-"
+"96","visitNewLineTrivia","-","0","-","-","-","-"
+"97","visitWhitespaceTrivia","-","0","-","-","-","-"
+"98","visitShebangTrivia","-","0","-","-","-","-"
+"99","visitConflictMarkerTrivia","-","0","-","-","-","-"
+"100","visitNumericLiteral","-","0","-","-","-","-"
+"101","visitBigIntLiteral","-","0","-","-","-","-"
+"102","visitStringLiteral","-","0","-","-","-","-"
+"103","visitJsxText","-","0","-","-","-","-"
+"104","visitJsxTextAllWhiteSpaces","-","0","-","-","-","-"
+"105","visitRegularExpressionLiteral","-","0","-","-","-","-"
+"106","visitNoSubstitutionTemplateLiteral","-","0","-","-","-","-"
+"107","visitTemplateHead","-","0","-","-","-","-"
+"108","visitTemplateMiddle","-","0","-","-","-","-"
+"109","visitTemplateTail","-","0","-","-","-","-"
+"110","visitOpenBraceToken","-","0","-","-","-","-"
+"111","visitCloseBraceToken","-","0","-","-","-","-"
+"112","visitOpenParenToken","-","0","-","-","-","-"
+"113","visitCloseParenToken","-","0","-","-","-","-"
+"114","visitOpenBracketToken","-","0","-","-","-","-"
+"115","visitCloseBracketToken","-","0","-","-","-","-"
+"116","visitDotToken","-","0","-","-","-","-"
+"117","visitDotDotDotToken","-","0","-","-","-","-"
+"118","visitSemicolonToken","-","0","-","-","-","-"
+"119","visitCommaToken","-","0","-","-","-","-"
+"120","visitQuestionDotToken","-","0","-","-","-","-"
+"121","visitLessThanToken","-","0","-","-","-","-"
+"122","visitLessThanSlashToken","-","0","-","-","-","-"
+"123","visitGreaterThanToken","-","0","-","-","-","-"
+"124","visitLessThanEqualsToken","-","0","-","-","-","-"
+"125","visitGreaterThanEqualsToken","-","0","-","-","-","-"
+"126","visitEqualsEqualsToken","-","0","-","-","-","-"
+"127","visitExclamationEqualsToken","-","0","-","-","-","-"
+"128","visitEqualsEqualsEqualsToken","-","0","-","-","-","-"
+"129","visitExclamationEqualsEqualsToken","-","0","-","-","-","-"
+"130","visitEqualsGreaterThanToken","-","0","-","-","-","-"
+"131","visitPlusToken","-","0","-","-","-","-"
+"132","visitMinusToken","-","0","-","-","-","-"
+"133","visitAsteriskToken","-","0","-","-","-","-"
+"134","visitAsteriskAsteriskToken","-","0","-","-","-","-"
+"135","visitSlashToken","-","0","-","-","-","-"
+"136","visitPercentToken","-","0","-","-","-","-"
+"137","visitPlusPlusToken","-","0","-","-","-","-"
+"138","visitMinusMinusToken","-","0","-","-","-","-"
+"139","visitLessThanLessThanToken","-","0","-","-","-","-"
+"140","visitGreaterThanGreaterThanToken","-","0","-","-","-","-"
+"141","visitGreaterThanGreaterThanGreaterThanToken","-","0","-","-","-","-"
+"142","visitAmpersandToken","-","0","-","-","-","-"
+"143","visitBarToken","-","0","-","-","-","-"
+"144","visitCaretToken","-","0","-","-","-","-"
+"145","visitExclamationToken","-","0","-","-","-","-"
+"146","visitTildeToken","-","0","-","-","-","-"
+"147","visitAmpersandAmpersandToken","-","0","-","-","-","-"
+"148","visitBarBarToken","-","0","-","-","-","-"
+"149","visitQuestionToken","-","0","-","-","-","-"
+"150","visitColonToken","-","0","-","-","-","-"
+"151","visitAtToken","-","0","-","-","-","-"
+"152","visitQuestionQuestionToken","-","0","-","-","-","-"
+"153","visitBacktickToken","-","0","-","-","-","-"
+"154","visitEqualsToken","-","0","-","-","-","-"
+"155","visitPlusEqualsToken","-","0","-","-","-","-"
+"156","visitMinusEqualsToken","-","0","-","-","-","-"
+"157","visitAsteriskEqualsToken","-","0","-","-","-","-"
+"158","visitAsteriskAsteriskEqualsToken","-","0","-","-","-","-"
+"159","visitSlashEqualsToken","-","0","-","-","-","-"
+"160","visitPercentEqualsToken","-","0","-","-","-","-"
+"161","visitLessThanLessThanEqualsToken","-","0","-","-","-","-"
+"162","visitGreaterThanGreaterThanEqualsToken","-","0","-","-","-","-"
+"163","visitGreaterThanGreaterThanGreaterThanEqualsToken","-","0","-","-","-","-"
+"164","visitAmpersandEqualsToken","-","0","-","-","-","-"
+"165","visitBarEqualsToken","-","0","-","-","-","-"
+"166","visitBarBarEqualsToken","-","0","-","-","-","-"
+"167","visitAmpersandAmpersandEqualsToken","-","0","-","-","-","-"
+"168","visitQuestionQuestionEqualsToken","-","0","-","-","-","-"
+"169","visitCaretEqualsToken","-","0","-","-","-","-"
+"170","visitIdentifier","-","0","-","-","-","-"
+"171","visitPrivateIdentifier","-","0","-","-","-","-"
+"172","visitBreakKeyword","-","0","-","-","-","-"
+"173","visitCaseKeyword","-","0","-","-","-","-"
+"174","visitCatchKeyword","-","0","-","-","-","-"
+"175","visitClassKeyword","-","0","-","-","-","-"
+"176","visitConstKeyword","-","0","-","-","-","-"
+"177","visitContinueKeyword","-","0","-","-","-","-"
+"178","visitDebuggerKeyword","-","0","-","-","-","-"
+"179","visitDefaultKeyword","-","0","-","-","-","-"
+"180","visitDeleteKeyword","-","0","-","-","-","-"
+"181","visitDoKeyword","-","0","-","-","-","-"
+"182","visitElseKeyword","-","0","-","-","-","-"
+"183","visitEnumKeyword","-","0","-","-","-","-"
+"184","visitExportKeyword","-","0","-","-","-","-"
+"185","visitExtendsKeyword","-","0","-","-","-","-"
+"186","visitFalseKeyword","-","0","-","-","-","-"
+"187","visitFinallyKeyword","-","0","-","-","-","-"
+"188","visitForKeyword","-","0","-","-","-","-"
+"189","visitFunctionKeyword","-","0","-","-","-","-"
+"190","visitIfKeyword","-","0","-","-","-","-"
+"191","visitImportKeyword","-","0","-","-","-","-"
+"192","visitInKeyword","-","0","-","-","-","-"
+"193","visitInstanceOfKeyword","-","0","-","-","-","-"
+"194","visitNewKeyword","-","0","-","-","-","-"
+"195","visitNullKeyword","-","0","-","-","-","-"
+"196","visitReturnKeyword","-","0","-","-","-","-"
+"197","visitSuperKeyword","-","0","-","-","-","-"
+"198","visitSwitchKeyword","-","0","-","-","-","-"
+"199","visitThisKeyword","-","0","-","-","-","-"
+"200","visitThrowKeyword","-","0","-","-","-","-"
+"201","visitTrueKeyword","-","0","-","-","-","-"
+"202","visitTryKeyword","-","0","-","-","-","-"
+"203","visitTypeOfKeyword","-","0","-","-","-","-"
+"204","visitVarKeyword","-","0","-","-","-","-"
+"205","visitVoidKeyword","-","0","-","-","-","-"
+"206","visitWhileKeyword","-","0","-","-","-","-"
+"207","visitWithKeyword","-","0","-","-","-","-"
+"208","visitImplementsKeyword","-","0","-","-","-","-"
+"209","visitInterfaceKeyword","-","0","-","-","-","-"
+"210","visitLetKeyword","-","0","-","-","-","-"
+"211","visitPackageKeyword","-","0","-","-","-","-"
+"212","visitPrivateKeyword","-","0","-","-","-","-"
+"213","visitProtectedKeyword","-","0","-","-","-","-"
+"214","visitPublicKeyword","-","0","-","-","-","-"
+"215","visitStaticKeyword","-","0","-","-","-","-"
+"216","visitYieldKeyword","-","0","-","-","-","-"
+"217","visitAbstractKeyword","-","0","-","-","-","-"
+"218","visitAsKeyword","-","0","-","-","-","-"
+"219","visitAssertsKeyword","-","0","-","-","-","-"
+"220","visitAnyKeyword","-","0","-","-","-","-"
+"221","visitAsyncKeyword","-","0","-","-","-","-"
+"222","visitAwaitKeyword","-","0","-","-","-","-"
+"223","visitBooleanKeyword","-","0","-","-","-","-"
+"224","visitConstructorKeyword","-","0","-","-","-","-"
+"225","visitDeclareKeyword","-","0","-","-","-","-"
+"226","visitGetKeyword","-","0","-","-","-","-"
+"227","visitInferKeyword","-","0","-","-","-","-"
+"228","visitIsKeyword","-","0","-","-","-","-"
+"229","visitKeyOfKeyword","-","0","-","-","-","-"
+"230","visitModuleKeyword","-","0","-","-","-","-"
+"231","visitNamespaceKeyword","-","0","-","-","-","-"
+"232","visitNeverKeyword","-","0","-","-","-","-"
+"233","visitReadonlyKeyword","-","0","-","-","-","-"
+"234","visitRequireKeyword","-","0","-","-","-","-"
+"235","visitNumberKeyword","-","0","-","-","-","-"
+"236","visitObjectKeyword","-","0","-","-","-","-"
+"237","visitSetKeyword","-","0","-","-","-","-"
+"238","visitStringKeyword","-","0","-","-","-","-"
+"239","visitSymbolKeyword","-","0","-","-","-","-"
+"240","visitTypeKeyword","-","0","-","-","-","-"
+"241","visitUndefinedKeyword","-","0","-","-","-","-"
+"242","visitUniqueKeyword","-","0","-","-","-","-"
+"243","visitUnknownKeyword","-","0","-","-","-","-"
+"244","visitFromKeyword","-","0","-","-","-","-"
+"245","visitGlobalKeyword","-","0","-","-","-","-"
+"246","visitBigIntKeyword","-","0","-","-","-","-"
+"247","visitOfKeyword","-","0","-","-","-","-"
+"248","visitQualifiedName","-","0","-","-","-","-"
+"249","visitComputedPropertyName","-","0","-","-","-","-"
+"250","visitTypeParameter","-","0","-","-","-","-"
+"251","visitParameter","-","0","-","-","-","-"
+"252","visitDecorator","-","0","-","-","-","-"
+"253","visitPropertySignature","-","0","-","-","-","-"
+"254","visitPropertyDeclaration","-","0","-","-","-","-"
+"255","visitMethodSignature","-","0","-","-","-","-"
+"256","visitMethodDeclaration","-","0","-","-","-","-"
+"257","visitConstructor","-","0","-","-","-","-"
+"258","visitGetAccessor","-","0","-","-","-","-"
+"259","visitSetAccessor","-","0","-","-","-","-"
+"260","visitCallSignature","-","0","-","-","-","-"
+"261","visitConstructSignature","-","0","-","-","-","-"
+"262","visitIndexSignature","-","0","-","-","-","-"
+"263","visitTypePredicate","-","0","-","-","-","-"
+"264","visitTypeReference","-","0","-","-","-","-"
+"265","visitFunctionType","-","0","-","-","-","-"
+"266","visitConstructorType","-","0","-","-","-","-"
+"267","visitTypeQuery","-","0","-","-","-","-"
+"268","visitTypeLiteral","-","0","-","-","-","-"
+"269","visitArrayType","-","0","-","-","-","-"
+"270","visitTupleType","-","0","-","-","-","-"
+"271","visitOptionalType","-","0","-","-","-","-"
+"272","visitRestType","-","0","-","-","-","-"
+"273","visitUnionType","-","0","-","-","-","-"
+"274","visitIntersectionType","-","0","-","-","-","-"
+"275","visitConditionalType","-","0","-","-","-","-"
+"276","visitInferType","-","0","-","-","-","-"
+"277","visitParenthesizedType","-","0","-","-","-","-"
+"278","visitThisType","-","0","-","-","-","-"
+"279","visitTypeOperator","-","0","-","-","-","-"
+"280","visitIndexedAccessType","-","0","-","-","-","-"
+"281","visitMappedType","-","0","-","-","-","-"
+"282","visitLiteralType","-","0","-","-","-","-"
+"283","visitNamedTupleMember","-","0","-","-","-","-"
+"284","visitImportType","-","0","-","-","-","-"
+"285","visitObjectBindingPattern","-","0","-","-","-","-"
+"286","visitArrayBindingPattern","-","0","-","-","-","-"
+"287","visitBindingElement","-","0","-","-","-","-"
+"288","visitArrayLiteralExpression","-","0","-","-","-","-"
+"289","visitObjectLiteralExpression","-","0","-","-","-","-"
+"290","visitPropertyAccessExpression","-","0","-","-","-","-"
+"291","visitElementAccessExpression","-","0","-","-","-","-"
+"292","visitCallExpression","-","0","-","-","-","-"
+"293","visitNewExpression","-","0","-","-","-","-"
+"294","visitTaggedTemplateExpression","-","0","-","-","-","-"
+"295","visitTypeAssertionExpression","-","0","-","-","-","-"
+"296","visitParenthesizedExpression","-","0","-","-","-","-"
+"297","visitFunctionExpression","-","0","-","-","-","-"
+"298","visitArrowFunction","-","0","-","-","-","-"
+"299","visitDeleteExpression","-","0","-","-","-","-"
+"300","visitTypeOfExpression","-","0","-","-","-","-"
+"301","visitVoidExpression","-","0","-","-","-","-"
+"302","visitAwaitExpression","-","0","-","-","-","-"
+"303","visitPrefixUnaryExpression","-","0","-","-","-","-"
+"304","visitPostfixUnaryExpression","-","0","-","-","-","-"
+"305","visitBinaryExpression","-","0","-","-","-","-"
+"306","visitConditionalExpression","-","0","-","-","-","-"
+"307","visitTemplateExpression","-","0","-","-","-","-"
+"308","visitYieldExpression","-","0","-","-","-","-"
+"309","visitSpreadElement","-","0","-","-","-","-"
+"310","visitClassExpression","-","0","-","-","-","-"
+"311","visitOmittedExpression","-","0","-","-","-","-"
+"312","visitExpressionWithTypeArguments","-","0","-","-","-","-"
+"313","visitAsExpression","-","0","-","-","-","-"
+"314","visitNonNullExpression","-","0","-","-","-","-"
+"315","visitMetaProperty","-","0","-","-","-","-"
+"316","visitSyntheticExpression","-","0","-","-","-","-"
+"317","visitTemplateSpan","-","0","-","-","-","-"
+"318","visitSemicolonClassElement","-","0","-","-","-","-"
+"319","visitBlock","-","0","-","-","-","-"
+"320","visitEmptyStatement","-","0","-","-","-","-"
+"321","visitVariableStatement","-","0","-","-","-","-"
+"322","visitExpressionStatement","-","0","-","-","-","-"
+"323","visitIfStatement","-","0","-","-","-","-"
+"324","visitDoStatement","-","0","-","-","-","-"
+"325","visitWhileStatement","-","0","-","-","-","-"
+"326","visitForStatement","-","0","-","-","-","-"
+"327","visitForInStatement","-","0","-","-","-","-"
+"328","visitForOfStatement","-","0","-","-","-","-"
+"329","visitContinueStatement","-","0","-","-","-","-"
+"330","visitBreakStatement","-","0","-","-","-","-"
+"331","visitReturnStatement","-","0","-","-","-","-"
+"332","visitWithStatement","-","0","-","-","-","-"
+"333","visitSwitchStatement","-","0","-","-","-","-"
+"334","visitLabeledStatement","-","0","-","-","-","-"
+"335","visitThrowStatement","-","0","-","-","-","-"
+"336","visitTryStatement","-","0","-","-","-","-"
+"337","visitDebuggerStatement","-","0","-","-","-","-"
+"338","visitVariableDeclaration","-","0","-","-","-","-"
+"339","visitVariableDeclarationList","-","0","-","-","-","-"
+"340","visitFunctionDeclaration","-","0","-","-","-","-"
+"341","visitClassDeclaration","-","0","-","-","-","-"
+"342","visitInterfaceDeclaration","-","0","-","-","-","-"
+"343","visitTypeAliasDeclaration","-","0","-","-","-","-"
+"344","visitEnumDeclaration","-","0","-","-","-","-"
+"345","visitModuleDeclaration","-","0","-","-","-","-"
+"346","visitModuleBlock","-","0","-","-","-","-"
+"347","visitCaseBlock","-","0","-","-","-","-"
+"348","visitNamespaceExportDeclaration","-","0","-","-","-","-"
+"349","visitImportEqualsDeclaration","-","0","-","-","-","-"
+"350","visitImportDeclaration","-","0","-","-","-","-"
+"351","visitImportClause","-","0","-","-","-","-"
+"352","visitNamespaceImport","-","0","-","-","-","-"
+"353","visitNamedImports","-","0","-","-","-","-"
+"354","visitImportSpecifier","-","0","-","-","-","-"
+"355","visitExportAssignment","-","0","-","-","-","-"
+"356","visitExportDeclaration","-","0","-","-","-","-"
+"357","visitNamedExports","-","0","-","-","-","-"
+"358","visitNamespaceExport","-","0","-","-","-","-"
+"359","visitExportSpecifier","-","0","-","-","-","-"
+"360","visitMissingDeclaration","-","0","-","-","-","-"
+"361","visitExternalModuleReference","-","0","-","-","-","-"
+"362","visitJsxElement","-","0","-","-","-","-"
+"363","visitJsxSelfClosingElement","-","0","-","-","-","-"
+"364","visitJsxOpeningElement","-","0","-","-","-","-"
+"365","visitJsxClosingElement","-","0","-","-","-","-"
+"366","visitJsxFragment","-","0","-","-","-","-"
+"367","visitJsxOpeningFragment","-","0","-","-","-","-"
+"368","visitJsxClosingFragment","-","0","-","-","-","-"
+"369","visitJsxAttribute","-","0","-","-","-","-"
+"370","visitJsxAttributes","-","0","-","-","-","-"
+"371","visitJsxSpreadAttribute","-","0","-","-","-","-"
+"372","visitJsxExpression","-","0","-","-","-","-"
+"373","visitCaseClause","-","0","-","-","-","-"
+"374","visitDefaultClause","-","0","-","-","-","-"
+"375","visitHeritageClause","-","0","-","-","-","-"
+"376","visitCatchClause","-","0","-","-","-","-"
+"377","visitPropertyAssignment","-","0","-","-","-","-"
+"378","visitShorthandPropertyAssignment","-","0","-","-","-","-"
+"379","visitSpreadAssignment","-","0","-","-","-","-"
+"380","visitEnumMember","-","0","-","-","-","-"
+"381","visitUnparsedPrologue","-","0","-","-","-","-"
+"382","visitUnparsedPrepend","-","0","-","-","-","-"
+"383","visitUnparsedText","-","0","-","-","-","-"
+"384","visitUnparsedInternalText","-","0","-","-","-","-"
+"385","visitUnparsedSyntheticReference","-","0","-","-","-","-"
+"386","visitSourceFile","-","0","-","-","-","-"
+"387","visitBundle","-","0","-","-","-","-"
+"388","visitUnparsedSource","-","0","-","-","-","-"
+"389","visitInputFiles","-","0","-","-","-","-"
+"390","visitJSDocTypeExpression","-","0","-","-","-","-"
+"391","visitJSDocAllType","-","0","-","-","-","-"
+"392","visitJSDocUnknownType","-","0","-","-","-","-"
+"393","visitJSDocNullableType","-","0","-","-","-","-"
+"394","visitJSDocNonNullableType","-","0","-","-","-","-"
+"395","visitJSDocOptionalType","-","0","-","-","-","-"
+"396","visitJSDocFunctionType","-","0","-","-","-","-"
+"397","visitJSDocVariadicType","-","0","-","-","-","-"
+"398","visitJSDocNamepathType","-","0","-","-","-","-"
+"399","visitJSDocComment","-","0","-","-","-","-"
+"400","visitJSDocTypeLiteral","-","0","-","-","-","-"
+"401","visitJSDocSignature","-","0","-","-","-","-"
+"402","visitJSDocTag","-","0","-","-","-","-"
+"403","visitJSDocAugmentsTag","-","0","-","-","-","-"
+"404","visitJSDocImplementsTag","-","0","-","-","-","-"
+"405","visitJSDocAuthorTag","-","0","-","-","-","-"
+"406","visitJSDocDeprecatedTag","-","0","-","-","-","-"
+"407","visitJSDocClassTag","-","0","-","-","-","-"
+"408","visitJSDocPublicTag","-","0","-","-","-","-"
+"409","visitJSDocPrivateTag","-","0","-","-","-","-"
+"410","visitJSDocProtectedTag","-","0","-","-","-","-"
+"411","visitJSDocReadonlyTag","-","0","-","-","-","-"
+"412","visitJSDocCallbackTag","-","0","-","-","-","-"
+"413","visitJSDocEnumTag","-","0","-","-","-","-"
+"414","visitJSDocParameterTag","-","0","-","-","-","-"
+"415","visitJSDocReturnTag","-","0","-","-","-","-"
+"416","visitJSDocThisTag","-","0","-","-","-","-"
+"417","visitJSDocTypeTag","-","0","-","-","-","-"
+"418","visitJSDocTemplateTag","-","0","-","-","-","-"
+"419","visitJSDocTypedefTag","-","0","-","-","-","-"
+"420","visitJSDocPropertyTag","-","0","-","-","-","-"
+"421","visitSyntaxList","-","0","-","-","-","-"
+"422","visitNotEmittedStatement","-","0","-","-","-","-"
+"423","visitPartiallyEmittedExpression","-","0","-","-","-","-"
+"424","visitCommaListExpression","-","0","-","-","-","-"
+"425","visitMergeDeclarationMarker","-","0","-","-","-","-"
+"426","visitEndOfDeclarationMarker","-","0","-","-","-","-"
+"427","visitSyntheticReferenceExpression","-","0","-","-","-","-"
+"428","visitCount","-","0","-","-","-","-"
+"429","InFileInterpreter","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"430","interpret","-","10","Minor Modification","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"431","getCompareFunction","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"432","isEditInMethod","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"433","removeDuplicates","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"434","isFirstFunctionOccurrence","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"435","CrossFileInterpreter","-","12","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"436","interpret","-","12","Minor Modification","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"437","getCompareFunctionFromMultipleFiles","-","12","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"438","getCompareFunctionFromFile","-","12","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"439","interpret","-","8","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"440","AbstractInterpreter","-","8","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"441","createParserForCommitAndFile","-","8","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"442","getRemovedFunctions","-","8","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"443","getFunctionNameCount","-","8","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"444","GitRangeLogTask","-","0","-","-","-","-"
+"445","run","-","0","-","-","-","-"
+"446","getResult","-","0","-","-","-","-"
+"447","AnalysisTask","-","19","Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"448","AnalysisTask","-","19","Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"449","build","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"450","run","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"451","createResult","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"452","hasMajorChange","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"453","isMajorChange","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"454","buildAndValidate","-","19","Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"455","createCommitCollection","-","19","Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"456","getOrCreateYcommit","-","19","Minor Modification","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"457","createBaseYcommit","-","19","Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"458","setFilePath","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"459","setFunctionStartLine","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"460","setFunctionName","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"461","getYresult","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"462","getLastMajorChange","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"463","getFilePath","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"464","getFileName","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"465","getStartCommit","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"466","getFunctionName","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"467","getFunctionStartLine","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"468","getFunctionEndLine","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"469","setFunctionEndLine","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"470","getStartFunction","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"471","setStartCommitName","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"472","getStartCommitName","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"473","getStartEnv","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"474","getNumCommitsTotal","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"475","setFunctionAnnotation","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"476","getFunctionAnnotation","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"477","getFunctionDoc","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"478","setFunctionDoc","-","19","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"479","RecursiveAnalysisTask","-","1","Body Change","Now counting commits seen and time taken in output files
+","2f53497b1425b37a0b62bd10b1e2d2b60f6c0457","Felix Grund"
+"480","run","-","1","Body Change","Now counting commits seen and time taken in output files
+","2f53497b1425b37a0b62bd10b1e2d2b60f6c0457","Felix Grund"
+"481","runAndPrintOptionally","-","1","","Now counting commits seen and time taken in output files
+","2f53497b1425b37a0b62bd10b1e2d2b60f6c0457","Felix Grund"
+"482","setPrintOutput","-","1","","Now counting commits seen and time taken in output files
+","2f53497b1425b37a0b62bd10b1e2d2b60f6c0457","Felix Grund"
+"483","getResult","-","1","","Now counting commits seen and time taken in output files
+","2f53497b1425b37a0b62bd10b1e2d2b60f6c0457","Felix Grund"
+"484","getNumAnalyzedCommits","-","1","Signature Change, Body Change","Now counting commits seen and time taken in output files
+","2f53497b1425b37a0b62bd10b1e2d2b60f6c0457","Felix Grund"
+"485","getTimeTaken","-","1","Signature Change, Body Change","Now counting commits seen and time taken in output files
+","2f53497b1425b37a0b62bd10b1e2d2b60f6c0457","Felix Grund"
+"486","getInstance","-","0","-","-","-","-"
+"487","TypeScript","-","0","-","-","-","-"
+"488","getTS","-","0","-","-","-","-"
+"489","getRuntime","-","0","-","-","-","-"
+"490","getLine","-","0","-","-","-","-"
+"491","getNodeText","-","0","-","-","-","-"
+"492","getParser","-","11","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"493","createRepository","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"494","checkNotNull","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"495","checkPositiveInt","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"496","projectDir","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"497","getBodySimilarity","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"498","getNameSimilarity","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"499","printMethodHistory","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"500","printMethodHistory","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"501","printAnalysisRun","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"502","writeOutputFile","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"503","writeOutputFileWithPath","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"504","writeShovelResultFile","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"505","writeShovelResultFile","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"506","writeGitLogFile","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"507","writeJsonOracleToFile","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"508","writeSimilarityToFile","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"509","writeSemanticDiff","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"510","writeGitDiff","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"511","writeJsonSimilarity","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"512","getTextFragment","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"513","getLines","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"514","countLineNumbers","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"515","getMsBetweenCommits","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"516","getDaysBetweenCommits","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"517","getLineNumberDistance","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"518","getLineNumberSimilarity","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"519","getFileExtensionWithoutDot","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"520","getFileName","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"521","sanitizeFunctionId","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"522","resultMapToString","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"523","parametersMetadataEqual","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"524","functionsToIdMap","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"525","parentNamesMatch","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"526","isFormatChange","-","27","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"527","gitDiffParent","-","3","Body Change","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"528","gitLog","-","3","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"529","Yexceptionschange","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"530","getOldValue","-","1","Annotation Change, Signature Change, Body Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"531","getNewValue","-","1","Annotation Change, Signature Change, Body Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"532","Yparametermetachange","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"533","Ybodychange","-","0","-","-","-","-"
+"534","Ymodifierchange","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"535","getOldValue","-","1","Annotation Change, Signature Change, Body Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"536","getNewValue","-","1","Annotation Change, Signature Change, Body Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"537","Ycrossfilechange","-","0","-","-","-","-"
+"538","toString","-","0","-","-","-","-"
+"539","Yparameterchange","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"540","getOldValue","-","1","Annotation Change, Signature Change, Body Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"541","getNewValue","-","1","Annotation Change, Signature Change, Body Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"542","Ynochange","-","3","Parameter Change, Signature Change","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"543","Yrename","-","2","","Different bugfixes and improvements during empirical analysis
+","476b403d1c73c8e4d37d82e21b72d2a3d2383f65","Felix Grund"
+"544","getOldValue","-","2","","Different bugfixes and improvements during empirical analysis
+","476b403d1c73c8e4d37d82e21b72d2a3d2383f65","Felix Grund"
+"545","getNewValue","-","2","","Different bugfixes and improvements during empirical analysis
+","476b403d1c73c8e4d37d82e21b72d2a3d2383f65","Felix Grund"
+"546","Ymovefromfile","-","1","","Different bugfixes and improvements during empirical analysis
+","476b403d1c73c8e4d37d82e21b72d2a3d2383f65","Felix Grund"
+"547","getExtendedDetailsJsonObject","-","1","Annotation Change, Signature Change, Body Change","Different bugfixes and improvements during empirical analysis
+","476b403d1c73c8e4d37d82e21b72d2a3d2383f65","Felix Grund"
+"548","Ydocchange","-","0","-","-","-","-"
+"549","getOldValue","-","0","-","-","-","-"
+"550","getNewValue","-","0","-","-","-","-"
+"551","Ychange","-","7","Parameter Change, Signature Change, Body Change","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"552","getCommit","-","7","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"553","toString","-","7","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"554","toJsonObject","-","7","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"555","getTypeAsString","-","7","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"556","getDiffAsString","-","7","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"557","Yintroduced","-","6","Minor Modification","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"558","toString","-","6","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"559","toJsonObject","-","6","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"560","getDiffAsString","-","6","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"561","Ysignaturechange","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"562","getOldValue","-","1","Signature Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"563","getNewValue","-","1","Signature Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"564","getExtendedDetailsJsonObject","-","1","Annotation Change, Signature Change, Body Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"565","Ymultichange","-","5","Parameter Change, Signature Change, Body Change","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"566","getChanges","-","5","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"567","toString","-","5","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"568","toJsonObject","-","5","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"569","getTypeAsString","-","5","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"570","Yannotationchange","-","0","-","-","-","-"
+"571","getOldValue","-","0","-","-","-","-"
+"572","getNewValue","-","0","-","-","-","-"
+"573","Yfilerename","-","1","","Different bugfixes and improvements during empirical analysis
+","476b403d1c73c8e4d37d82e21b72d2a3d2383f65","Felix Grund"
+"574","getExtendedDetailsJsonObject","-","1","Annotation Change, Signature Change, Body Change","Different bugfixes and improvements during empirical analysis
+","476b403d1c73c8e4d37d82e21b72d2a3d2383f65","Felix Grund"
+"575","Ycomparefunctionchange","-","12","Body Change","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"576","toString","-","12","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"577","toJsonObject","-","12","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"578","getExtendedDetailsJsonObject","-","12","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"579","getNewFunction","-","12","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"580","getOldFunction","-","12","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"581","getDaysBetweenCommits","-","12","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"582","getCommitsBetweenForRepo","-","12","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"583","getCommitsBetweenForFile","-","12","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"584","getDiffAsString","-","12","Signature Change, Body Change","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"585","getOldCommit","-","12","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"586","Yformatchange","-","0","-","-","-","-"
+"587","Yreturntypechange","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"588","getOldValue","-","1","Annotation Change, Signature Change, Body Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"589","getNewValue","-","1","Annotation Change, Signature Change, Body Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"590","getBody","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"591","getName","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"592","getParameters","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"593","getReturnStmt","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"594","getModifiers","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"595","getExceptions","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"596","getNameLineNumber","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"597","getEndLineNumber","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"598","getCommitName","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"599","getCommitNameShort","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"600","getCommit","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"601","getId","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"602","getFunctionPath","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"603","getSourceFileContent","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"604","getSourceFilePath","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"605","getSourceFragment","-","10","Signature Change","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"606","getParentName","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"607","getAnnotation","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"608","getFunctionDoc","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"609","getUnformattedBody","-","10","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"610","TypeScriptFunction","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"611","getParameter","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"612","getModifier","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"613","getInitialName","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"614","getInitialType","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"615","getInitialModifiers","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"616","getInitialExceptions","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"617","getInitialParameters","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"618","getInitialBody","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"619","getInitialBeginLine","-","4","Minor Modification","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"620","getInitialEndLine","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"621","getInitialParentName","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"622","getInitialFunctionPath","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"623","getInitialAnnotation","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"624","getInitialDoc","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"625","getInitialUnformattedBody","-","4","","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"626","getInitialSourceFragment","-","4","Annotation Change, Signature Change, Body Change","Function Annotation in Diffs (#62)
+
+* Add annotations to source fragments
+
+* Accept Python functions at EOF","162cea28e50bdb8045b3cc44648fe15236f5f01d","Braxton Hall"
+"627","TypeScriptParser","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"628","parseMethods","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"629","methodMatches","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"630","getScopeSimilarity","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"631","getAcceptedFileExtension","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"632","getMinorChanges","-","3","Body Change","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"633","transformMethod","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"634","methodMatches","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"635","visit","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"636","visitArrowFunction","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"637","visitConstructor","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"638","visitFunctionDeclaration","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"639","visitFunctionExpression","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"640","visitMethodDeclaration","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"641","getMatchedNodes","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"642","getLineFrom","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"643","addStartAndEndLines","-","3","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"644","JavaFunction","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"645","createParameterMetadataMap","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"646","createParameterModifiersString","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"647","createParameterAnnotationsString","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"648","getInitialName","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"649","getInitialType","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"650","getInitialModifiers","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"651","getInitialExceptions","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"652","getInitialParameters","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"653","getInitialBody","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"654","getInitialBeginLine","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"655","getInitialEndLine","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"656","getInitialParentName","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"657","getInitialFunctionPath","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"658","getInitialId","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"659","getInitialSourceFragment","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"660","getInitialAnnotation","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"661","isNestedMethod","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"662","getInitialDoc","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"663","getInitialUnformattedBody","-","17","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"664","JavaParser","-","26","","Fixed parentNameEquals bug
+","217fb8daf87b06ba3cdd1395ba2a908fd6ce6e2d","Felix Grund"
+"665","parseMethods","-","26","","Fixed parentNameEquals bug
+","217fb8daf87b06ba3cdd1395ba2a908fd6ce6e2d","Felix Grund"
+"666","methodMatches","-","26","","Fixed parentNameEquals bug
+","217fb8daf87b06ba3cdd1395ba2a908fd6ce6e2d","Felix Grund"
+"667","getScopeSimilarity","-","26","","Fixed parentNameEquals bug
+","217fb8daf87b06ba3cdd1395ba2a908fd6ce6e2d","Felix Grund"
+"668","getAcceptedFileExtension","-","26","","Fixed parentNameEquals bug
+","217fb8daf87b06ba3cdd1395ba2a908fd6ce6e2d","Felix Grund"
+"669","getMinorChanges","-","26","","Fixed parentNameEquals bug
+","217fb8daf87b06ba3cdd1395ba2a908fd6ce6e2d","Felix Grund"
+"670","transformMethod","-","26","","Fixed parentNameEquals bug
+","217fb8daf87b06ba3cdd1395ba2a908fd6ce6e2d","Felix Grund"
+"671","methodMatches","-","26","","Fixed parentNameEquals bug
+","217fb8daf87b06ba3cdd1395ba2a908fd6ce6e2d","Felix Grund"
+"672","visit","-","26","","Fixed parentNameEquals bug
+","217fb8daf87b06ba3cdd1395ba2a908fd6ce6e2d","Felix Grund"
+"673","getMatchedNodes","-","26","","Fixed parentNameEquals bug
+","217fb8daf87b06ba3cdd1395ba2a908fd6ce6e2d","Felix Grund"
+"674","PythonParser","-","2","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"675","parseMethods","-","2","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"676","methodMatches","-","2","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"677","getScopeSimilarity","-","2","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"678","getAcceptedFileExtension","-","2","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"679","getMinorChanges","-","2","Body Change","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"680","transformMethod","-","2","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"681","methodMatches","-","2","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"682","visitFuncdef","-","2","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"683","getMatchedNodes","-","2","","Add annotation change
+","dc75fa4bbe336ff9aed725548ae1b249dc17a00b","braxtonhall"
+"684","PythonFunction","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"685","getParameter","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"686","getParameter","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"687","getDefaultArguments","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"688","getDefaultArguments","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"689","getInitialName","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"690","getInitialType","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"691","getInitialModifiers","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"692","getInitialExceptions","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"693","getInitialParameters","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"694","visitDef_parameter","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"695","visitNamed_parameter","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"696","visitParameterImpl","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"697","getInitialBody","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"698","getInitialBeginLine","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"699","getInitialEndLine","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"700","getInitialParentName","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"701","getInitialFunctionPath","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"702","getInitialAnnotation","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"703","getInitialDoc","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"704","getInitialUnformattedBody","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"705","getInitialSourceFragment","-","8","","Add in missing PythonFunction method (#53)
+
+","fa7e150110c4c2ef7d99e6697442c0a1542e6ec7","Braxton Hall"
+"706","AbstractParser","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"707","getScopeSimilarity","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"708","getAcceptedFileExtension","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"709","parseMethods","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"710","getDocChange","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"711","getAnnotationChange","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"712","getFormatChange","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"713","getReturnTypeChange","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"714","getFunctionRename","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"715","getParametersChange","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"716","getParametersMetaChange","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"717","getExceptionsChange","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"718","getModifiersChange","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"719","getBodyChange","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"720","getMinorChanges","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"721","getMajorChanges","-","29","Annotation Change, Signature Change, Body Change","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"722","getMostSimilarFunction","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"723","isFunctionSimilar","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"724","isShortFunction","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"725","getAllMethodsCount","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"726","getAllMethods","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"727","functionNamesConsideredEqual","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"728","transformMethodsToMap","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"729","findMethodsByLineRange","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"730","methodMatches","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"731","findAllMethods","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"732","findMethod","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"733","findFunctionByNameAndLine","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"734","methodMatches","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"735","getCandidateWithSameParent","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"736","findFunctionByOtherFunction","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"737","findFunctionsByNameAndParams","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"738","methodMatches","-","29","","Moved getMajorChanges up into AbstractParser
+","fa9848601d9a5de07813d841c9989a901c59fb07","Felix Grund"
+"739","findFunctionByNameAndLine","-","4","","whole range of bugfixes
+","d0326e5e302787f00ab03540b4b84cf69077c371","Felix Grund"
+"740","findMethodsByLineRange","-","4","","whole range of bugfixes
+","d0326e5e302787f00ab03540b4b84cf69077c371","Felix Grund"
+"741","getAllMethods","-","4","","whole range of bugfixes
+","d0326e5e302787f00ab03540b4b84cf69077c371","Felix Grund"
+"742","getAllMethodsCount","-","4","","whole range of bugfixes
+","d0326e5e302787f00ab03540b4b84cf69077c371","Felix Grund"
+"743","findFunctionByOtherFunction","-","4","","whole range of bugfixes
+","d0326e5e302787f00ab03540b4b84cf69077c371","Felix Grund"
+"744","functionNamesConsideredEqual","-","4","","whole range of bugfixes
+","d0326e5e302787f00ab03540b4b84cf69077c371","Felix Grund"
+"745","getMostSimilarFunction","-","4","","whole range of bugfixes
+","d0326e5e302787f00ab03540b4b84cf69077c371","Felix Grund"
+"746","getScopeSimilarity","-","4","","whole range of bugfixes
+","d0326e5e302787f00ab03540b4b84cf69077c371","Felix Grund"
+"747","getMajorChanges","-","4","","whole range of bugfixes
+","d0326e5e302787f00ab03540b4b84cf69077c371","Felix Grund"
+"748","getMinorChanges","-","4","","whole range of bugfixes
+","d0326e5e302787f00ab03540b4b84cf69077c371","Felix Grund"
+"749","getAcceptedFileExtension","-","4","","whole range of bugfixes
+","d0326e5e302787f00ab03540b4b84cf69077c371","Felix Grund"
+"750","getInitialName","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"751","getInitialType","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"752","getInitialModifiers","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"753","getInitialExceptions","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"754","getInitialParameters","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"755","getInitialBody","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"756","getInitialBeginLine","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"757","getInitialEndLine","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"758","getInitialParentName","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"759","getInitialFunctionPath","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"760","getInitialAnnotation","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"761","getInitialDoc","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"762","getInitialUnformattedBody","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"763","AbstractFunction","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"764","getIdParameterString","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"765","getInitialId","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"766","getInitialReturnStmt","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"767","getInitialSourceFragment","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"768","getId","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"769","getSourceFragment","-","16","Annotation Change, Signature Change, Body Change","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"770","getCommitName","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"771","getCommitNameShort","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"772","getSourceFilePath","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"773","getSourceFileContent","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"774","toString","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"775","getCommit","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"776","getFunctionPath","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"777","getParentName","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"778","getName","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"779","getReturnStmt","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"780","getModifiers","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"781","getExceptions","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"782","getBody","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"783","getParameters","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"784","getNameLineNumber","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"785","getEndLineNumber","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"786","getAnnotation","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"787","getFunctionDoc","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"788","getUnformattedBody","-","16","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"789","NoParserFoundException","-","0","-","-","-","-"
+"790","ParseException","-","0","-","-","-","-"
+"791","getFileName","-","0","-","-","-","-"
+"792","getFileContent","-","0","-","-","-","-"
+"793","JsonResult","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"794","getStartCommitName","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"795","getSourceFileName","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"796","getFunctionName","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"797","getFunctionStartLine","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"798","getFunctionEndLine","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"799","getChangeHistory","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"800","toJson","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"801","getRepositoryName","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"802","getOrigin","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"803","getSourceFilePath","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"804","getFunctionId","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"805","getRepositoryPath","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"806","getChangeHistoryDetails","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"807","getChangeHistoryShort","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"808","getNumCommitsSeen","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"809","getTimeTaken","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"810","setNumCommitsSeen","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"811","setTimeTaken","-","6","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"812","JsonChangeHistoryDiff","-","3","Parameter Change, Signature Change, Body Change","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"813","toJson","-","3","","implemented baseline switch feature
+","46dcba42687092d6806a4df3b6f12bde1313849a","Felix Grund"
+"814","JsonSimilarity","-","1","","now differentiating for body similarity depending on body length
+","02083c2597e3c752d8e3b47c428e41900bad179d","Felix Grund"
+"815","getSimilarity","-","1","","now differentiating for body similarity depending on body length
+","02083c2597e3c752d8e3b47c428e41900bad179d","Felix Grund"
+"816","getFunction","-","1","","now differentiating for body similarity depending on body length
+","02083c2597e3c752d8e3b47c428e41900bad179d","Felix Grund"
+"817","getMostSimilarFunction","-","1","","now differentiating for body similarity depending on body length
+","02083c2597e3c752d8e3b47c428e41900bad179d","Felix Grund"
+"818","toJson","-","1","","now differentiating for body similarity depending on body length
+","02083c2597e3c752d8e3b47c428e41900bad179d","Felix Grund"
+"819","getCommitName","-","1","","now differentiating for body similarity depending on body length
+","02083c2597e3c752d8e3b47c428e41900bad179d","Felix Grund"
+"820","FunctionEntry","-","1","Parameter Change","now differentiating for body similarity depending on body length
+","02083c2597e3c752d8e3b47c428e41900bad179d","Felix Grund"
+"821","getCommitName","-","1","","now differentiating for body similarity depending on body length
+","02083c2597e3c752d8e3b47c428e41900bad179d","Felix Grund"
+"822","getName","-","1","","now differentiating for body similarity depending on body length
+","02083c2597e3c752d8e3b47c428e41900bad179d","Felix Grund"
+"823","getPath","-","1","","now differentiating for body similarity depending on body length
+","02083c2597e3c752d8e3b47c428e41900bad179d","Felix Grund"
+"824","getSource","-","1","Signature Change, Body Change","now differentiating for body similarity depending on body length
+","02083c2597e3c752d8e3b47c428e41900bad179d","Felix Grund"
+"825","toString","-","1","Minor Modification","now differentiating for body similarity depending on body length
+","02083c2597e3c752d8e3b47c428e41900bad179d","Felix Grund"
+"826","JsonOracle","-","0","-","-","-","-"
+"827","getRepositoryName","-","0","-","-","-","-"
+"828","setRepositoryName","-","0","-","-","-","-"
+"829","getFilePath","-","0","-","-","-","-"
+"830","setFilePath","-","0","-","-","-","-"
+"831","getFunctionName","-","0","-","-","-","-"
+"832","setFunctionName","-","0","-","-","-","-"
+"833","getFunctionStartLine","-","0","-","-","-","-"
+"834","setFunctionStartLine","-","0","-","-","-","-"
+"835","getStartCommitName","-","0","-","-","-","-"
+"836","setStartCommitName","-","0","-","-","-","-"
+"837","getExpectedResult","-","0","-","-","-","-"
+"838","setExpectedResult","-","0","-","-","-","-"
+"839","toJson","-","0","-","-","-","-"
+"840","serialize","-","4","Body Change","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"841","runMining","-","33","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"842","runSingle","-","33","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"843","runForMethod","-","33","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"844","createAndWriteSemanticDiff","-","33","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"845","printAsJson","-","33","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"846","printFileStart","-","33","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"847","printFileEnd","-","33","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"848","printMethodStart","-","33","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"849","printMethodEnd","-","33","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"850","printMiningEnd","-","33","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"851","printMiningStart","-","33","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"852","printProgress","-","33","","Moved tasks to own package and fixed git diff issue
+","56f99c131fff3656b8d14f81d10da08c8488be24","Felix Grund"
+"853","main","-","0","-","-","-","-"
+"854","execute","-","0","-","-","-","-"
+"855","main","-","1","Body Change","README and some file renaming/moving
+","affc36f170798edc90904c3d4d1a7bac14106a24","Felix Grund"
+"856","newOption","-","1","","README and some file renaming/moving
+","affc36f170798edc90904c3d4d1a7bac14106a24","Felix Grund"
+"857","CachingRepositoryService","-","12","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"858","getGit","-","12","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"859","getRepository","-","12","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"860","getRepositoryName","-","12","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"861","getRepositoryPath","-","12","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"862","getCommitsBetween","-","12","Minor Modification","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"863","getCacheKey","-","12","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"864","getHistory","-","12","Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"865","findFileContent","-","12","Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"866","handleCacheHits","-","12","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"867","handleCacheAdd","-","12","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"868","findFilesByExtension","-","12","Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"869","getFileContentByObjectId","-","12","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"870","write","-","12","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"871","toString","-","12","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"872","getPrevCommitNeglectingFile","-","12","Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"873","gitLogRange","-","12","Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"874","findCommitByName","-","12","Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"875","findRevCommitById","-","12","Annotation Change, Signature Change, Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"876","getRepository","-","4","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"877","getRepositoryName","-","4","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"878","getRepositoryPath","-","4","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"879","getGit","-","4","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"880","getCommitsBetween","-","4","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"881","getHistory","-","4","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"882","findFileContent","-","4","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"883","findFilesByExtension","-","4","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"884","getFileContentByObjectId","-","4","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"885","findCommitByName","-","4","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"886","getPrevCommitNeglectingFile","-","4","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"887","gitLogRange","-","4","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"888","findRevCommitById","-","4","Signature Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"889","Ymodifiers","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"890","equals","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"891","getModifiers","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"892","toString","-","1","Annotation Change, Signature Change, Body Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"893","Yparameter","-","5","Body Change","Parameters now include metadata (e.g. annotations, modifiers)
+","193d7b395b23e9ff465ceb072c7233516fa72192","Felix Grund"
+"894","getName","-","5","","Parameters now include metadata (e.g. annotations, modifiers)
+","193d7b395b23e9ff465ceb072c7233516fa72192","Felix Grund"
+"895","getType","-","5","","Parameters now include metadata (e.g. annotations, modifiers)
+","193d7b395b23e9ff465ceb072c7233516fa72192","Felix Grund"
+"896","setMetadata","-","5","Signature Change, Body Change","Parameters now include metadata (e.g. annotations, modifiers)
+","193d7b395b23e9ff465ceb072c7233516fa72192","Felix Grund"
+"897","getMetadataString","-","5","Signature Change, Body Change","Parameters now include metadata (e.g. annotations, modifiers)
+","193d7b395b23e9ff465ceb072c7233516fa72192","Felix Grund"
+"898","equals","-","5","Body Change","Parameters now include metadata (e.g. annotations, modifiers)
+","193d7b395b23e9ff465ceb072c7233516fa72192","Felix Grund"
+"899","getNameTypeString","-","5","","Parameters now include metadata (e.g. annotations, modifiers)
+","193d7b395b23e9ff465ceb072c7233516fa72192","Felix Grund"
+"900","toString","-","5","","Parameters now include metadata (e.g. annotations, modifiers)
+","193d7b395b23e9ff465ceb072c7233516fa72192","Felix Grund"
+"901","Yhistory","-","0","-","-","-","-"
+"902","getCommits","-","0","-","-","-","-"
+"903","getRevCommits","-","0","-","-","-","-"
+"904","Ydiff","-","8","Parameter Change, Signature Change, Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"905","init","-","8","Parameter Change, Signature Change, Body Change","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"906","getSingleEditList","-","8","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"907","getDiff","-","8","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"908","getPathMapping","-","8","","work in progress trying to fix heap space
+","5646fc7e193ae6438ea8f2c7738ade99fac06a94","Felix Grund"
+"909","Yexceptions","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"910","equals","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"911","getExceptions","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"912","toString","-","1","Annotation Change, Signature Change, Body Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"913","put","-","4","Annotation Change, Signature Change, Body Change","Performance improvements (static ast cache), env variable renames, result logging, etc.
+","d58bb9f19ffe870b6a3a9c30a359f565b1a71ff4","Felix Grund"
+"914","toString","-","4","Annotation Change, Signature Change, Body Change","Performance improvements (static ast cache), env variable renames, result logging, etc.
+","d58bb9f19ffe870b6a3a9c30a359f565b1a71ff4","Felix Grund"
+"915","toJson","-","4","","Performance improvements (static ast cache), env variable renames, result logging, etc.
+","d58bb9f19ffe870b6a3a9c30a359f565b1a71ff4","Felix Grund"
+"916","Yreturn","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"917","equals","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"918","getType","-","1","","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"919","toString","-","1","Annotation Change, Signature Change, Body Change","Added json returns for different change types
+","c4f895269ef2fe2db7261ac414f6239909c0b2c4","Felix Grund"
+"920","Ycommit","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"921","Ycommit","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"922","getCommit","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"923","getMatchedFunction","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"924","setMatchedFunction","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"925","getFileContent","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"926","setFileContent","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"927","setFileName","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"928","getFileName","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"929","getPrev","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"930","setPrev","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"931","getFilePath","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"932","setFilePath","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"933","getParser","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"934","setParser","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"935","toString","-","4","Body Change","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"936","getName","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
+"937","getShortName","-","4","","Started frontend implementation
+","102dbe06ed30e49facf5de1d4731c7bb2127944c","Felix Grund"
