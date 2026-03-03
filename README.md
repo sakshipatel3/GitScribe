@@ -2,7 +2,7 @@ GitScribe 🚀🔍
 Your go-to tool for mining and visualizing method-level changes in Java projects!
  
 🔸 What is GitScribe?
-A lightweight, commit-history analyzer that automatically detects eight types of method edits—body tweaks, parameter shifts, return-type updates, modifier and exception adjustments, file renames, introductions/deletions, and compound changes.
+A lightweight, commit-history analyzer that automatically detects eight types of method edits; body tweaks, parameter shifts, return-type updates, modifier and exception adjustments, file renames, introductions/deletions, and compound changes.
  
 🔸 Key Features
  
