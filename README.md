@@ -39,6 +39,23 @@ Automatically detects multiple types of method edits:
 Analyze and compare **method evolution patterns across multiple projects**.
 
 ---
+## 🏗 Architecture
+
+GitScribe follows a modular pipeline architecture that processes repositories,
+tracks method evolution, detects change types, and exports structured results.
+
+<p align="center">
+<img src="images/architecture.png" width="750"/>
+</p>
+
+The system consists of five main layers:
+
+• **Orchestration Layer** – coordinates repository processing  
+• **VCS Adapter** – clones repositories using JGit  
+• **History Traversal Engine** – walks commit history and tracks file changes  
+• **Structural Analysis** – parses Java methods using Eclipse JDT AST  
+• **Change Detection Pipeline** – identifies method-level changes  
+• **Reporting Layer** – exports results as structured CSV files
 
 ## 💡 Why Use GitScribe?
 
