@@ -1,23 +1,72 @@
-GitScribe 🚀🔍
-Your go-to tool for mining and visualizing method-level changes in Java projects!
- 
-🔸 What is GitScribe?
-A lightweight, commit-history analyzer that automatically detects eight types of method edits; body tweaks, parameter shifts, return-type updates, modifier and exception adjustments, file renames, introductions/deletions, and compound changes.
- 
-🔸 Key Features
- 
-📜 Method History Extraction: Follows each method across renames and refactorings.
- 
-⚙️ Change Detectors: Detects Body Change, Parameter Change, Return-Type Change, Modifier Change, Exceptions Change, File Rename, Introduced/Deleted, and MultiChange events.
- 
-🔄 Cross-Project Comparison: Compare evolution fingerprints across multiple repos.
- 
-🔸 Why Use GitScribe?
- 
-💡 Gain empirical insights into where developers spend their time (e.g., 33 % body edits!).
- 
-🛠️ Drive smarter IDE refactorings and batch workflows based on real co-change patterns.
- 
-🔍 Benchmark new change-detection algorithms on our generated dataset.
- 
-📚 Teach students about software evolution with real-world data.
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6a11cb,100:2575fc&height=200&section=header&text=GitScribe&fontSize=45&fontColor=ffffff"/>
+</p>
+
+# GitScribe 🚀🔍
+
+**GitScribe** is a developer tool that mines Git history to track how Java methods evolve across commits.
+
+Instead of just looking at file-level changes, GitScribe focuses on **method-level evolution** — helping developers understand *how code actually changes over time.*
+
+---
+
+## 🛠 Tech Stack
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Git](https://img.shields.io/badge/Git-181717?style=for-the-badge&logo=git&logoColor=white)
+![AST](https://img.shields.io/badge/AST%20Parsing-blue?style=for-the-badge)
+
+---
+
+## ✨ Key Features
+
+### 📜 Method History Extraction
+Track a method across commits, even through **refactorings and file renames**.
+
+### ⚙️ Change Detection Engine
+Automatically detects multiple types of method edits:
+
+- 🔧 Body Changes  
+- 🧾 Parameter Changes  
+- 🔁 Return-Type Changes  
+- 🛡 Modifier Changes  
+- ⚠️ Exception Changes  
+- 📂 File Renames  
+- ➕ Introduced / ➖ Deleted Methods  
+- 🔀 MultiChange Events  
+
+### 🔄 Cross-Repository Analysis
+Analyze and compare **method evolution patterns across multiple projects**.
+
+---
+
+## 💡 Why Use GitScribe?
+
+### 🔍 Understand Real Code Evolution
+Discover where developers actually spend their time during development.
+
+Example insights:
+- Body edits dominate most commits
+- Certain change types frequently appear together
+
+### 🛠 Improve Development Tools
+Use real change patterns to design **smarter refactoring tools and developer workflows.**
+
+### 📊 Benchmark Research
+Evaluate new **change-detection algorithms** on real commit history data.
+
+### 📚 Teaching Software Evolution
+Perfect for demonstrating **how software evolves in real-world projects.**
+
+---
+
+## 🚀 Example Use Cases
+
+- Analyzing refactoring patterns in large repositories
+- Mining commit histories for research
+- Understanding method-level software evolution
+- Generating datasets for change detection research
+
+---
+
+⭐ If you found this project interesting, consider giving it a star!
