@@ -38,7 +38,7 @@ public class MethodHistoryController {
     /**
      * JSON endpoint: returns the method history data for a given file.
      * 
-     * IMPORTANT: The client now must supply the local repository directory (repoDirPath)
+     
      * and the relative file path (filePath). The MethodHistoryRequest should be updated
      * accordingly (i.e. it should no longer include repoOwner, repoName, or accessToken).
      */
